@@ -1,6 +1,6 @@
 {
-  "name": "My New Hugo Site",
-  "short_name": "My New Hugo Site",
+  "name": "CS 210 Build Guide",
+  "short_name": "CS 210 Build Guide",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

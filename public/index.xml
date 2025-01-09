@@ -1,5 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My New Hugo Site</title><link>http://localhost:1313/</link><description>Recent content on My New Hugo Site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>http://localhost:1313/docs/my-first-post/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/my-first-post/</guid><description>&lt;h1 id="welcome-to-my-first-blog-post-using-hugo">
- Welcome to my first blog post using Hugo!
- &lt;a class="anchor" href="#welcome-to-my-first-blog-post-using-hugo">#&lt;/a>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CS 210 Build Guide</title><link>http://localhost:1313/</link><description>Recent content on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Home</title><link>http://localhost:1313/docs/my-first-post/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/my-first-post/</guid><description>&lt;h1 id="home">
+ Home
+ &lt;a class="anchor" href="#home">#&lt;/a>
 &lt;/h1>
-&lt;p>Here&amp;rsquo;s a little bit about me!&lt;/p></description></item></channel></rss>
+&lt;p>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/exampleTeamHome.md">Team Documentation Examples&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Vercel Credits&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Students can create a Vercel Hobby account as soon as the class starts - Hobby accounts are always free&lt;/li>
+&lt;li>If they&amp;rsquo;d like to explore Pro features, we&amp;rsquo;ve set up &amp;ldquo;Stanford CS&amp;rdquo; as a category in the &lt;a href="https://vercel.com/startups/credits">Vercel Credits for Startups&lt;/a> application page. Each team will receive $1,200 in credits. For &amp;ldquo;Proof of Partnership&amp;rdquo;, they should upload a screenshot of the syllabus / an e-mail from Jay about the course.&lt;/li>
+&lt;li>A 14-day Pro Trial begins (they can email &lt;a href="mailto:josh.oynick@vercel.com">josh.oynick@vercel.com&lt;/a> with any issues).&lt;/li>
+&lt;li>At the end of the trial, if the teams choose to remain on Pro and add credit card info, the credits will begin to draw down.&lt;/li>
+&lt;li>If teams add payment info, they are strongly encouraged to set hard spending limits right away &lt;a href="https://vercel.com/docs/pricing/spend-management">(documentation)&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Tools of the Trade&lt;/strong>&lt;/p></description></item></channel></rss>
