@@ -16,6 +16,10 @@ Since the config file has already been updated, you can then run the server:
 hugo server --minify --theme hugo-book
 ```
 
+## Contribution
+
+All the documents are in the `content/docs` folder. In particular, you can follow the folder structure of `ml/` to add a new section. From there, you can then follow the deployment instructions below.
+
 ## Deployment
 
 To deploy, first, we can generate the static `public` folder:
