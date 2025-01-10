@@ -1,19 +1,85 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docs on CS 210 Build Guide</title>
-    <link>https://cpondoc.github.io/docs/</link>
-    <description>Recent content in Docs on CS 210 Build Guide</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate>
-    <atom:link href="https://cpondoc.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Class Resources</title>
-      <link>https://cpondoc.github.io/docs/class-resources/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cpondoc.github.io/docs/class-resources/</guid>
-      <description>&lt;h1 id=&#34;class-resources&#34;&gt;&#xA;  Class Resources&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#class-resources&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some general class resources, ranging from deployment credits to general tools of the trade.&lt;/p&gt;&#xA;&lt;h2 id=&#34;vercel-credits&#34;&gt;&#xA;  Vercel Credits&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#vercel-credits&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Students can create a Vercel Hobby account as soon as the class starts - Hobby accounts are always free&lt;/li&gt;&#xA;&lt;li&gt;If they&amp;rsquo;d like to explore Pro features, we&amp;rsquo;ve set up &amp;ldquo;Stanford CS&amp;rdquo; as a category in the &lt;a href=&#34;https://vercel.com/startups/credits&#34;&gt;Vercel Credits for Startups&lt;/a&gt; application page. Each team will receive $1,200 in credits. For &amp;ldquo;Proof of Partnership&amp;rdquo;, they should upload a screenshot of the syllabus / an e-mail from Jay about the course.&lt;/li&gt;&#xA;&lt;li&gt;A 14-day Pro Trial begins (they can email &lt;a href=&#34;mailto:josh.oynick@vercel.com&#34;&gt;josh.oynick@vercel.com&lt;/a&gt; with any issues).&lt;/li&gt;&#xA;&lt;li&gt;At the end of the trial, if the teams choose to remain on Pro and add credit card info, the credits will begin to draw down.&lt;/li&gt;&#xA;&lt;li&gt;If teams add payment info, they are strongly encouraged to set hard spending limits right away &lt;a href=&#34;https://vercel.com/docs/pricing/spend-management&#34;&gt;(documentation)&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tools-of-the-trade&#34;&gt;&#xA;  Tools of the Trade&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#tools-of-the-trade&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;documentation&#34;&gt;&#xA;  Documentation&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#documentation&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Github Wiki&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/exampleTeamHome.md&#34;&gt;Here are some examples&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;project-management&#34;&gt;&#xA;  Project Management&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#project-management&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Github issues, milestones, labels, comments&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/SlingShot/issues?q=is%3Aissue&amp;#43;is%3Aclosed&#34;&gt;Here is an example&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;real-time-team-communication&#34;&gt;&#xA;  Real-time Team Communication&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#real-time-team-communication&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Slack, Messenger&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;discovery-concepting-phase&#34;&gt;&#xA;  Discovery, Concepting Phase&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#discovery-concepting-phase&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hand draw, Miro, Figma, GSlides&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;build-phase&#34;&gt;&#xA;  Build Phase&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#build-phase&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Github Code (Pull request methodology)&lt;/li&gt;&#xA;&lt;li&gt;Github issues (code focused)&lt;/li&gt;&#xA;&lt;li&gt;Leverage Copilot, chatGPT, Bard as is useful&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;github-resources&#34;&gt;&#xA;  GitHub Resources&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#github-resources&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/RegisterUserNameInGit.md&#34;&gt;Make sure your git activity is attributed to you&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/GithubCheatSheetPage1.pdf&#34;&gt;Github Cheat Sheet - Page 1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/GithubCheatSheetPage2.pdf&#34;&gt;Github Cheat Sheet - Page 2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/creating-a-pull-request/&#34;&gt;How to make a Github pull request&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;miscellany-resources&#34;&gt;&#xA;  Miscellany Resources&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#miscellany-resources&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1M6M7dHHVzunv3ynmKHIMDKkJat3JVMIUYl3Bs-g9VUw/edit?usp=sharing&#34;&gt;Messaging Activation Matrix&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1vu-8u8_Qayhp2ZJwyUKVFi920v-m0gLhYrK8908S5do/edit?usp=sharing&#34;&gt;Beginner&amp;rsquo;s resources for Building Web and mobile apps&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/CS210ReadingList.pdf&#34;&gt;CS210 Recommended Reads for Aspiring Program Managers/Product Leaders&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/17V02paI0qu3Ib4Hi8N-UNfOv-r2VGFjF5tgbj4e3Lvc/edit?usp=sharing&#34;&gt;Contract of Deliverables Template&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1G83CHXpSJJ53WH4mEEiaD7O_BOWMzSAfDg4zL6o-3L4/edit?usp=sharing&#34;&gt;Product Requirements Document (PRD)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/12levihvt-3oeqtq_nUZLFPP0ipz9w2Whiz5fVkJ57pM/edit?usp=sharing&#34;&gt;An incomplete list of ethics questions to consider&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/BudgetGuidelines.md&#34;&gt;Team Budget Guidelines&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Grading%20Rubric%20%20%282%29.pdf&#34;&gt;Grading Rubric&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://giphy.com/apps/giphycapture&#34;&gt;Make an animated gif from screen shots&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://scrumblr.ca/&#34;&gt;Digital sticky note option&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on CS 210 Build Guide</title><link>http://localhost:1313/docs/</link><description>Recent content in Docs on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Class Resources</title><link>http://localhost:1313/docs/class-resources/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/class-resources/</guid><description>&lt;h1 id="class-resources">
+ Class Resources
+ &lt;a class="anchor" href="#class-resources">#&lt;/a>
+&lt;/h1>
+&lt;p>Below are some general class resources, ranging from deployment credits to general tools of the trade.&lt;/p>
+&lt;h2 id="vercel-credits">
+ Vercel Credits
+ &lt;a class="anchor" href="#vercel-credits">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Students can create a Vercel Hobby account as soon as the class starts - Hobby accounts are always free&lt;/li>
+&lt;li>If they&amp;rsquo;d like to explore Pro features, we&amp;rsquo;ve set up &amp;ldquo;Stanford CS&amp;rdquo; as a category in the &lt;a href="https://vercel.com/startups/credits">Vercel Credits for Startups&lt;/a> application page. Each team will receive $1,200 in credits. For &amp;ldquo;Proof of Partnership&amp;rdquo;, they should upload a screenshot of the syllabus / an e-mail from Jay about the course.&lt;/li>
+&lt;li>A 14-day Pro Trial begins (they can email &lt;a href="mailto:josh.oynick@vercel.com">josh.oynick@vercel.com&lt;/a> with any issues).&lt;/li>
+&lt;li>At the end of the trial, if the teams choose to remain on Pro and add credit card info, the credits will begin to draw down.&lt;/li>
+&lt;li>If teams add payment info, they are strongly encouraged to set hard spending limits right away &lt;a href="https://vercel.com/docs/pricing/spend-management">(documentation)&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="tools-of-the-trade">
+ Tools of the Trade
+ &lt;a class="anchor" href="#tools-of-the-trade">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="documentation">
+ Documentation
+ &lt;a class="anchor" href="#documentation">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Github Wiki&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/exampleTeamHome.md">Here are some examples&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="project-management">
+ Project Management
+ &lt;a class="anchor" href="#project-management">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Github issues, milestones, labels, comments&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/SlingShot/issues?q=is%3Aissue&amp;#43;is%3Aclosed">Here is an example&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="real-time-team-communication">
+ Real-time Team Communication
+ &lt;a class="anchor" href="#real-time-team-communication">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Slack, Messenger&lt;/li>
+&lt;/ul>
+&lt;h3 id="discovery-concepting-phase">
+ Discovery, Concepting Phase
+ &lt;a class="anchor" href="#discovery-concepting-phase">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Hand draw, Miro, Figma, GSlides&lt;/li>
+&lt;/ul>
+&lt;h3 id="build-phase">
+ Build Phase
+ &lt;a class="anchor" href="#build-phase">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Github Code (Pull request methodology)&lt;/li>
+&lt;li>Github issues (code focused)&lt;/li>
+&lt;li>Leverage Copilot, chatGPT, Bard as is useful&lt;/li>
+&lt;/ul>
+&lt;h2 id="github-resources">
+ GitHub Resources
+ &lt;a class="anchor" href="#github-resources">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/RegisterUserNameInGit.md">Make sure your git activity is attributed to you&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/GithubCheatSheetPage1.pdf">Github Cheat Sheet - Page 1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/GithubCheatSheetPage2.pdf">Github Cheat Sheet - Page 2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://help.github.com/articles/creating-a-pull-request/">How to make a Github pull request&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="miscellany-resources">
+ Miscellany Resources
+ &lt;a class="anchor" href="#miscellany-resources">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/spreadsheets/d/1M6M7dHHVzunv3ynmKHIMDKkJat3JVMIUYl3Bs-g9VUw/edit?usp=sharing">Messaging Activation Matrix&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.google.com/document/d/1vu-8u8_Qayhp2ZJwyUKVFi920v-m0gLhYrK8908S5do/edit?usp=sharing">Beginner&amp;rsquo;s resources for Building Web and mobile apps&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/CS210ReadingList.pdf">CS210 Recommended Reads for Aspiring Program Managers/Product Leaders&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.google.com/document/d/17V02paI0qu3Ib4Hi8N-UNfOv-r2VGFjF5tgbj4e3Lvc/edit?usp=sharing">Contract of Deliverables Template&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.google.com/document/d/1G83CHXpSJJ53WH4mEEiaD7O_BOWMzSAfDg4zL6o-3L4/edit?usp=sharing">Product Requirements Document (PRD)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.google.com/document/d/12levihvt-3oeqtq_nUZLFPP0ipz9w2Whiz5fVkJ57pM/edit?usp=sharing">An incomplete list of ethics questions to consider&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/BudgetGuidelines.md">Team Budget Guidelines&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Grading%20Rubric%20%20%282%29.pdf">Grading Rubric&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://giphy.com/apps/giphycapture">Make an animated gif from screen shots&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://scrumblr.ca/">Digital sticky note option&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

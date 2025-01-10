@@ -1,4 +1,4 @@
-baseURL = 'https://cpondoc.github.io/'
+baseURL = 'https://cs210.github.io/'
 languageCode = 'en-us'
 title = 'CS 210 Build Guide'
 theme = "hugo-book"
