@@ -4,4 +4,5 @@ title = 'CS 210 Build Guide'
 theme = "hugo-book"
 relativeURLs = true
 canonifyURLs = true
+BookToC = true
 

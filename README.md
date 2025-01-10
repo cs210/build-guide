@@ -18,11 +18,17 @@ hugo server --minify --theme hugo-book
 
 ## Deployment
 
-```
+To deploy, first, we can generate the static `public` folder:
+
+```bash
 hugo -D
-cd public
+```
+
+We currently use GitHub Pages to host our site, so we can then push the `public` folder to the `gh-pages` branch as below:
+
+```bash
 git init
-git remote add origin https://github.com/cpondoc/test-hugo-blog.git
+git remote add origin https://github.com/cs210/build-guide.git
 git branch -M gh-pages
 git add .
 git commit -m "Deploy Hugo site"
