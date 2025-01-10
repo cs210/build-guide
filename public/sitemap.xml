@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/</loc>
+    <loc>https://cpondoc.github.io/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/ml/basic/</loc>
+    <loc>https://cpondoc.github.io/docs/ml/basic/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/class-resources/</loc>
+    <loc>https://cpondoc.github.io/docs/class-resources/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/</loc>
+    <loc>https://cpondoc.github.io/docs/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/ml/extending-llms/</loc>
+    <loc>https://cpondoc.github.io/docs/ml/extending-llms/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/ml/general-advice/</loc>
+    <loc>https://cpondoc.github.io/docs/ml/general-advice/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/ml/</loc>
+    <loc>https://cpondoc.github.io/docs/ml/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://cpondoc.github.io/categories/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://cpondoc.github.io/tags/</loc>
   </url>
 </urlset>
