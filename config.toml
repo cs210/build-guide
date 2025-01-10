@@ -7,4 +7,5 @@ theme = "hugo-book"
   author = "Your Name"
   description = "A blog powered by Hugo"
   showToC = true  # Show table of contents
+  BookToC = true
   # Other theme-specific options can be added here.
