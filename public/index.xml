@@ -3,7 +3,6 @@
  &lt;a class="anchor" href="#basic-ml">#&lt;/a>
 &lt;/h1>
 &lt;p>Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p>
-&lt;p>[TO-DO: ADD FINETUNING]&lt;/p>
 &lt;h2 id="large-language-models-llms">
  Large Language Models (LLMs)
  &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
@@ -92,7 +91,23 @@
 &lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Grading%20Rubric%20%20%282%29.pdf">Grading Rubric&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://giphy.com/apps/giphycapture">Make an animated gif from screen shots&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://scrumblr.ca/">Digital sticky note option&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
+&lt;/ul></description></item><item><title>Extending LLMs</title><link>http://localhost:1313/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
+ Extending LLMs
+ &lt;a class="anchor" href="#extending-llms">#&lt;/a>
+&lt;/h1>
+&lt;p>Below are some ways to go beyond just LLMs and use your custom data. These include methods such as finetuning, RAG, and even searching over tabular data.&lt;/p>
+&lt;h2 id="finetuning">
+ Finetuning
+ &lt;a class="anchor" href="#finetuning">#&lt;/a>
+&lt;/h2>
+&lt;h2 id="rag">
+ RAG
+ &lt;a class="anchor" href="#rag">#&lt;/a>
+&lt;/h2>
+&lt;h2 id="tabular-data">
+ Tabular Data
+ &lt;a class="anchor" href="#tabular-data">#&lt;/a>
+&lt;/h2></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
  General Advice
  &lt;a class="anchor" href="#general-advice">#&lt;/a>
 &lt;/h1>

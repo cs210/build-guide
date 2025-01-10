@@ -3,4 +3,18 @@
  &lt;a class="anchor" href="#basic-ml">#&lt;/a>
 &lt;/h1>
 &lt;p>Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p>
-&lt;p>Our advice? &lt;em>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting.&lt;/em> These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item></channel></rss>
+&lt;p>[TO-DO: ADD FINETUNING]&lt;/p>
+&lt;h2 id="large-language-models-llms">
+ Large Language Models (LLMs)
+ &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
+&lt;/h2>
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
+ General Advice
+ &lt;a class="anchor" href="#general-advice">#&lt;/a>
+&lt;/h1>
+&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p>
+&lt;h2 id="buy-first-not-build">
+ Buy first, not Build.
+ &lt;a class="anchor" href="#buy-first-not-build">#&lt;/a>
+&lt;/h2>
+&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item></channel></rss>
