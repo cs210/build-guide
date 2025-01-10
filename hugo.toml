@@ -2,3 +2,6 @@ baseURL = 'https://cpondoc.github.io/'
 languageCode = 'en-us'
 title = 'CS 210 Build Guide'
 theme = "hugo-book"
+relativeURLs = true
+canonifyURLs = true
+

@@ -1,4 +1,4 @@
-baseURL = "https://cpondoc.github.io/"
+baseURL = "https://cpondoc.github.io/test-hugo-blog"
 languageCode = "en-us"
 title = "My Hugo Blog"
 theme = "hugo-book"
