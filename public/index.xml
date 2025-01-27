@@ -1,47 +1,164 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>CS 210 Build Guide</title>
-    <link>https://cs210.github.io/</link>
-    <description>Recent content on CS 210 Build Guide</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate>
-    <atom:link href="https://cs210.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Basic ML</title>
-      <link>https://cs210.github.io/docs/ml/basic/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/ml/basic/</guid>
-      <description>&lt;h1 id=&#34;basic-ml&#34;&gt;&#xA;  Basic ML&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#basic-ml&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p&gt;&#xA;&lt;h2 id=&#34;large-language-models-llms&#34;&gt;&#xA;  Large Language Models (LLMs)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#large-language-models-llms&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href=&#34;https://platform.openai.com/docs/quickstart?language-preference=python&#34;&gt;OpenAI API&lt;/a&gt; to make a call to a language model:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Class Resources</title>
-      <link>https://cs210.github.io/docs/class-resources/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/class-resources/</guid>
-      <description>&lt;h1 id=&#34;class-resources&#34;&gt;&#xA;  Class Resources&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#class-resources&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some general class resources, ranging from deployment credits to general tools of the trade.&lt;/p&gt;&#xA;&lt;h2 id=&#34;vercel-credits&#34;&gt;&#xA;  Vercel Credits&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#vercel-credits&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Students can create a Vercel Hobby account as soon as the class starts - Hobby accounts are always free&lt;/li&gt;&#xA;&lt;li&gt;If they&amp;rsquo;d like to explore Pro features, we&amp;rsquo;ve set up &amp;ldquo;Stanford CS&amp;rdquo; as a category in the &lt;a href=&#34;https://vercel.com/startups/credits&#34;&gt;Vercel Credits for Startups&lt;/a&gt; application page. Each team will receive $1,200 in credits. For &amp;ldquo;Proof of Partnership&amp;rdquo;, they should upload a screenshot of the syllabus / an e-mail from Jay about the course.&lt;/li&gt;&#xA;&lt;li&gt;A 14-day Pro Trial begins (they can email &lt;a href=&#34;mailto:josh.oynick@vercel.com&#34;&gt;josh.oynick@vercel.com&lt;/a&gt; with any issues).&lt;/li&gt;&#xA;&lt;li&gt;At the end of the trial, if the teams choose to remain on Pro and add credit card info, the credits will begin to draw down.&lt;/li&gt;&#xA;&lt;li&gt;If teams add payment info, they are strongly encouraged to set hard spending limits right away &lt;a href=&#34;https://vercel.com/docs/pricing/spend-management&#34;&gt;(documentation)&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tools-of-the-trade&#34;&gt;&#xA;  Tools of the Trade&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#tools-of-the-trade&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;documentation&#34;&gt;&#xA;  Documentation&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#documentation&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Github Wiki&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/exampleTeamHome.md&#34;&gt;Here are some examples&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;project-management&#34;&gt;&#xA;  Project Management&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#project-management&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Github issues, milestones, labels, comments&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/SlingShot/issues?q=is%3Aissue&amp;#43;is%3Aclosed&#34;&gt;Here is an example&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;real-time-team-communication&#34;&gt;&#xA;  Real-time Team Communication&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#real-time-team-communication&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Slack, Messenger&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;discovery-concepting-phase&#34;&gt;&#xA;  Discovery, Concepting Phase&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#discovery-concepting-phase&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hand draw, Miro, Figma, GSlides&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;build-phase&#34;&gt;&#xA;  Build Phase&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#build-phase&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Github Code (Pull request methodology)&lt;/li&gt;&#xA;&lt;li&gt;Github issues (code focused)&lt;/li&gt;&#xA;&lt;li&gt;Leverage Copilot, chatGPT, Bard as is useful&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;github-resources&#34;&gt;&#xA;  GitHub Resources&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#github-resources&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/RegisterUserNameInGit.md&#34;&gt;Make sure your git activity is attributed to you&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/GithubCheatSheetPage1.pdf&#34;&gt;Github Cheat Sheet - Page 1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/GithubCheatSheetPage2.pdf&#34;&gt;Github Cheat Sheet - Page 2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/creating-a-pull-request/&#34;&gt;How to make a Github pull request&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;miscellany-resources&#34;&gt;&#xA;  Miscellany Resources&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#miscellany-resources&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1M6M7dHHVzunv3ynmKHIMDKkJat3JVMIUYl3Bs-g9VUw/edit?usp=sharing&#34;&gt;Messaging Activation Matrix&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1vu-8u8_Qayhp2ZJwyUKVFi920v-m0gLhYrK8908S5do/edit?usp=sharing&#34;&gt;Beginner&amp;rsquo;s resources for Building Web and mobile apps&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Resources/CS210ReadingList.pdf&#34;&gt;CS210 Recommended Reads for Aspiring Program Managers/Product Leaders&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/17V02paI0qu3Ib4Hi8N-UNfOv-r2VGFjF5tgbj4e3Lvc/edit?usp=sharing&#34;&gt;Contract of Deliverables Template&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1G83CHXpSJJ53WH4mEEiaD7O_BOWMzSAfDg4zL6o-3L4/edit?usp=sharing&#34;&gt;Product Requirements Document (PRD)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/12levihvt-3oeqtq_nUZLFPP0ipz9w2Whiz5fVkJ57pM/edit?usp=sharing&#34;&gt;An incomplete list of ethics questions to consider&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/BudgetGuidelines.md&#34;&gt;Team Budget Guidelines&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/cs210/Home/blob/master/Grading%20Rubric%20%20%282%29.pdf&#34;&gt;Grading Rubric&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://giphy.com/apps/giphycapture&#34;&gt;Make an animated gif from screen shots&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://scrumblr.ca/&#34;&gt;Digital sticky note option&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Extending LLMs</title>
-      <link>https://cs210.github.io/docs/ml/extending-llms/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/ml/extending-llms/</guid>
-      <description>&lt;h1 id=&#34;extending-llms&#34;&gt;&#xA;  Extending LLMs&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#extending-llms&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some ways to go beyond just LLMs and use your custom data. These include methods such as finetuning, RAG, and even searching over tabular data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;finetuning&#34;&gt;&#xA;  Finetuning&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#finetuning&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;rag&#34;&gt;&#xA;  RAG&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rag&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;tabular-data&#34;&gt;&#xA;  Tabular Data&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#tabular-data&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>General Advice</title>
-      <link>https://cs210.github.io/docs/ml/general-advice/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/ml/general-advice/</guid>
-      <description>&lt;h1 id=&#34;general-advice&#34;&gt;&#xA;  General Advice&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#general-advice&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p&gt;&#xA;&lt;h2 id=&#34;buy-first-not-build&#34;&gt;&#xA;  Buy first, not Build.&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#buy-first-not-build&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Getting Started in VR</title>
-      <link>https://cs210.github.io/docs/vr/getting-started-in-vr/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/vr/getting-started-in-vr/</guid>
-      <description>&lt;h1 id=&#34;getting-started-in-vr&#34;&gt;&#xA;  Getting Started in VR&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#getting-started-in-vr&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Original document by Mindy:&lt;/p&gt;&#xA;&lt;p&gt;Last year I did a VR project in CS210 with Unreal Engine, and thought that I would share some thoughts and tips with you guys to get you started.&lt;/p&gt;&#xA;&lt;h2 id=&#34;demos&#34;&gt;&#xA;  Demos&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#demos&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Title&lt;/th&gt;&#xA;          &lt;th&gt;Link&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Oculus Demos repository&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://share.oculus.com/&#34;&gt;https://share.oculus.com/&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;The definitive VR experiences and demos repository from Oculus.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Elite Dangerous&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://www.elitedangerous.com/&#34;&gt;https://www.elitedangerous.com/&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;A space exploration video game with a great VR experience. Costs $45.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;things-to-think-about&#34;&gt;&#xA;  Things to think about&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#things-to-think-about&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;what sort of approaches to games/experiences might work for your project?&lt;/li&gt;&#xA;&lt;li&gt;What are some common/different control interfaces/menus/UI that the demos use? What works better or worse?&lt;/li&gt;&#xA;&lt;li&gt;what hasn&amp;rsquo;t been done/done well? What can you bring to the table?&lt;/li&gt;&#xA;&lt;li&gt;There are also loads of other VR demos available - if you want to see if a kind of demo exists just Google it and you&amp;rsquo;ll probably turn something up.&lt;/li&gt;&#xA;&lt;li&gt;Also check out Cardboard demos on Google Play (I recommend VRSE) to see what sort of things are happening in the non-gaming/low-end space.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;vr-best-practices&#34;&gt;&#xA;  VR best practices&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#vr-best-practices&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Google - &lt;a href=&#34;http://www.fastcodesign.com/3053288/3-tips-on-designing-for-vr-from-google&#34;&gt;http://www.fastcodesign.com/3053288/3-tips-on-designing-for-vr-from-google&lt;/a&gt;, &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.google.vr.cardboard.apps.designlab&#34;&gt;https://play.google.com/store/apps/details?id=com.google.vr.cardboard.apps.designlab&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Unreal - &lt;a href=&#34;https://docs.unrealengine.com/latest/INT/Platforms/VR/ContentSetup/index.html&#34;&gt;https://docs.unrealengine.com/latest/INT/Platforms/VR/ContentSetup/index.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Oculus - &lt;a href=&#34;https://developer.oculus.com/documentation/intro-vr/latest/concepts/bp_intro/&#34;&gt;https://developer.oculus.com/documentation/intro-vr/latest/concepts/bp_intro/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Search for &amp;ldquo;VR best practices for [insert company/device/controller]&amp;rdquo; and you&amp;rsquo;ll probably unearth a ton of stuff&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;unreal-engine-tutorials&#34;&gt;&#xA;  Unreal Engine tutorials&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#unreal-engine-tutorials&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Unreal has a really good YouTube series where a developer sits there and shows you how to make a demo. This was by far the most helpful way to get me oriented.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLZlv_N0_O1gak1_FoAJVrEGiLIploeF3F&#34;&gt;https://www.youtube.com/playlist?list=PLZlv_N0_O1gak1_FoAJVrEGiLIploeF3F&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;LayoutVR has good walkthrough guides&lt;/li&gt;&#xA;&lt;li&gt;You can go read &lt;a href=&#34;https://docs.unrealengine.com/latest/INT/index.html&#34;&gt;the official Unreal Engine guides&lt;/a&gt; too&lt;/li&gt;&#xA;&lt;li&gt;Unreal has a steep learning curve if you&amp;rsquo;ve never done game dev before, so make sure you allocate a lot of time to learning it!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;controllers&#34;&gt;&#xA;  Controllers&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#controllers&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This is still a huge pain point in VR, and likely the bottleneck to what you can accomplish.&lt;/li&gt;&#xA;&lt;li&gt;Oculus Touch is probably your best bet if you can get your hands on it&lt;/li&gt;&#xA;&lt;li&gt;Razer Hydra/Sixense STEM or the Kinect are other good&lt;/li&gt;&#xA;&lt;li&gt;But really, try to find all your possible options. If the controller is not exactly commercially available yet, don&amp;rsquo;t be afraid to ask for a prototype. You won&amp;rsquo;t believe how willing people are to work with you once you drop the Stanford/Unreal/Facebook/Oculus name.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;mindys-teams-work-from-last-year&#34;&gt;&#xA;  Mindy&amp;rsquo;s team&amp;rsquo;s work from last year&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mindys-teams-work-from-last-year&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://unrealvr.wordpress.com/&#34;&gt;https://unrealvr.wordpress.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;ve also done stuff on the Cardboard and some product research on the space in general. Feel free to ask me any questions!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There is a LOT of information to just absorb if you&amp;rsquo;re completely new to the space.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CS 210 Build Guide</title><link>http://localhost:1313/</link><description>Recent content on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Start Here</title><link>http://localhost:1313/docs/web/starthere/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/starthere/</guid><description>&lt;h1 id="basic-website-setup">Basic Website Setup&lt;/h1>
+&lt;p>Below is a quick setup guide for building a website with Next.js and Vercel &amp;ndash; Perfect infrastructure to add V0 code to!!&lt;/p>
+&lt;h2 id="project-setup">Project Setup&lt;/h2>
+&lt;p>First check if you have Node:
+&amp;rsquo;&amp;rsquo;'
+node -v
+&amp;rsquo;&amp;rsquo;'
+If not download &lt;a href="https://nodejs.org/en">Node&lt;/a> and verify with:
+&amp;rsquo;&amp;rsquo;'
+node -v
+&amp;rsquo;&amp;rsquo;'
+Next create a new web project. This line has some presets that should integrate well with V0 code.
+&amp;rsquo;&amp;rsquo;'
+npx create-next-app@latest project-name &amp;ndash;typescript &amp;ndash;eslint &amp;ndash;tailwind &amp;ndash;app &amp;ndash;src-dir &amp;ndash;import-alias &amp;ldquo;@/*&amp;rdquo;
+&amp;rsquo;&amp;rsquo;'
+Say no to Turbopack.
+Navigate to the project-name directory:
+&amp;rsquo;&amp;rsquo;'
+cd project-name
+&amp;rsquo;&amp;rsquo;'
+Go to v0, sign up and prompt it to build a website of your choosing.&lt;/p></description></item><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">Basic ML&lt;/h1>
+&lt;p>Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p>
+&lt;h2 id="large-language-models-llms">Large Language Models (LLMs)&lt;/h2>
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python3" data-lang="python3">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> openai &lt;span style="color:#f92672">import&lt;/span> OpenAI
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>client &lt;span style="color:#f92672">=&lt;/span> OpenAI()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>completion &lt;span style="color:#f92672">=&lt;/span> client&lt;span style="color:#f92672">.&lt;/span>chat&lt;span style="color:#f92672">.&lt;/span>completions&lt;span style="color:#f92672">.&lt;/span>create(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> model&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;gpt-4o-mini&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> messages&lt;span style="color:#f92672">=&lt;/span>[
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {&lt;span style="color:#e6db74">&amp;#34;role&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;system&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;content&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;You are a helpful assistant.&amp;#34;&lt;/span>},
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#34;role&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;user&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#34;content&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Write a haiku about recursion in programming.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(completion&lt;span style="color:#f92672">.&lt;/span>choices[&lt;span style="color:#ae81ff">0&lt;/span>]&lt;span style="color:#f92672">.&lt;/span>message)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>As you continue to iterate, you may want to leverage the power of open-source models. For this, Hugging Face &amp;ndash; in particular, the &lt;a href="https://huggingface.co/sentence-transformers">SentenceTransformers&lt;/a> module &amp;ndash; will be your best friend. Just specify your language model and you&amp;rsquo;ll be good to go:&lt;/p></description></item><item><title>Class Resources</title><link>http://localhost:1313/docs/class-resources/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/class-resources/</guid><description>&lt;h1 id="class-resources">Class Resources&lt;/h1>
+&lt;p>Below are some general class resources, ranging from deployment credits to general tools of the trade.&lt;/p>
+&lt;h2 id="vercel-credits">Vercel Credits&lt;/h2>
+&lt;ul>
+&lt;li>Students can create a Vercel Hobby account as soon as the class starts - Hobby accounts are always free&lt;/li>
+&lt;li>If they&amp;rsquo;d like to explore Pro features, we&amp;rsquo;ve set up &amp;ldquo;Stanford CS&amp;rdquo; as a category in the &lt;a href="https://vercel.com/startups/credits">Vercel Credits for Startups&lt;/a> application page. Each team will receive $1,200 in credits. For &amp;ldquo;Proof of Partnership&amp;rdquo;, they should upload a screenshot of the syllabus / an e-mail from Jay about the course.&lt;/li>
+&lt;li>A 14-day Pro Trial begins (they can email &lt;a href="mailto:josh.oynick@vercel.com">josh.oynick@vercel.com&lt;/a> with any issues).&lt;/li>
+&lt;li>At the end of the trial, if the teams choose to remain on Pro and add credit card info, the credits will begin to draw down.&lt;/li>
+&lt;li>If teams add payment info, they are strongly encouraged to set hard spending limits right away &lt;a href="https://vercel.com/docs/pricing/spend-management">(documentation)&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="tools-of-the-trade">Tools of the Trade&lt;/h2>
+&lt;h3 id="documentation">Documentation&lt;/h3>
+&lt;ul>
+&lt;li>Github Wiki&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/exampleTeamHome.md">Here are some examples&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="project-management">Project Management&lt;/h3>
+&lt;ul>
+&lt;li>Github issues, milestones, labels, comments&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/SlingShot/issues?q=is%3Aissue+is%3Aclosed">Here is an example&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="real-time-team-communication">Real-time Team Communication&lt;/h3>
+&lt;ul>
+&lt;li>Slack, Messenger&lt;/li>
+&lt;/ul>
+&lt;h3 id="discovery-concepting-phase">Discovery, Concepting Phase&lt;/h3>
+&lt;ul>
+&lt;li>Hand draw, Miro, Figma, GSlides&lt;/li>
+&lt;/ul>
+&lt;h3 id="build-phase">Build Phase&lt;/h3>
+&lt;ul>
+&lt;li>Github Code (Pull request methodology)&lt;/li>
+&lt;li>Github issues (code focused)&lt;/li>
+&lt;li>Leverage Copilot, chatGPT, Bard as is useful&lt;/li>
+&lt;/ul>
+&lt;h2 id="github-resources">GitHub Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/RegisterUserNameInGit.md">Make sure your git activity is attributed to you&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/GithubCheatSheetPage1.pdf">Github Cheat Sheet - Page 1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/GithubCheatSheetPage2.pdf">Github Cheat Sheet - Page 2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://help.github.com/articles/creating-a-pull-request/">How to make a Github pull request&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="miscellany-resources">Miscellany Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/spreadsheets/d/1M6M7dHHVzunv3ynmKHIMDKkJat3JVMIUYl3Bs-g9VUw/edit?usp=sharing">Messaging Activation Matrix&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.google.com/document/d/1vu-8u8_Qayhp2ZJwyUKVFi920v-m0gLhYrK8908S5do/edit?usp=sharing">Beginner&amp;rsquo;s resources for Building Web and mobile apps&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Resources/CS210ReadingList.pdf">CS210 Recommended Reads for Aspiring Program Managers/Product Leaders&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.google.com/document/d/17V02paI0qu3Ib4Hi8N-UNfOv-r2VGFjF5tgbj4e3Lvc/edit?usp=sharing">Contract of Deliverables Template&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.google.com/document/d/1G83CHXpSJJ53WH4mEEiaD7O_BOWMzSAfDg4zL6o-3L4/edit?usp=sharing">Product Requirements Document (PRD)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.google.com/document/d/12levihvt-3oeqtq_nUZLFPP0ipz9w2Whiz5fVkJ57pM/edit?usp=sharing">An incomplete list of ethics questions to consider&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/BudgetGuidelines.md">Team Budget Guidelines&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Grading%20Rubric%20%20(2).pdf">Grading Rubric&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://giphy.com/apps/giphycapture">Make an animated gif from screen shots&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://scrumblr.ca/">Digital sticky note option&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Extending LLMs</title><link>http://localhost:1313/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">Extending LLMs&lt;/h1>
+&lt;p>Below are some ways to go beyond just LLMs and use your custom data. These include methods such as finetuning, RAG, and even searching over tabular data.&lt;/p>
+&lt;h2 id="finetuning">Finetuning&lt;/h2>
+&lt;h2 id="rag">RAG&lt;/h2>
+&lt;h2 id="tabular-data">Tabular Data&lt;/h2></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">General Advice&lt;/h1>
+&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p>
+&lt;h2 id="buy-first-not-build">Buy first, not Build.&lt;/h2>
+&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item><item><title>Getting Started in VR</title><link>http://localhost:1313/docs/vr/getting-started-in-vr/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/vr/getting-started-in-vr/</guid><description>&lt;h1 id="getting-started-in-vr">Getting Started in VR&lt;/h1>
+&lt;p>Original document by Mindy:&lt;/p>
+&lt;p>Last year I did a VR project in CS210 with Unreal Engine, and thought that I would share some thoughts and tips with you guys to get you started.&lt;/p>
+&lt;h2 id="demos">Demos&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Title&lt;/th>
+ &lt;th>Link&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Oculus Demos repository&lt;/strong>&lt;/td>
+ &lt;td>&lt;a href="https://share.oculus.com/">https://share.oculus.com/&lt;/a>&lt;/td>
+ &lt;td>The definitive VR experiences and demos repository from Oculus.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Elite Dangerous&lt;/strong>&lt;/td>
+ &lt;td>&lt;a href="https://www.elitedangerous.com/">https://www.elitedangerous.com/&lt;/a>&lt;/td>
+ &lt;td>A space exploration video game with a great VR experience. Costs $45.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="things-to-think-about">Things to think about&lt;/h2>
+&lt;ul>
+&lt;li>what sort of approaches to games/experiences might work for your project?&lt;/li>
+&lt;li>What are some common/different control interfaces/menus/UI that the demos use? What works better or worse?&lt;/li>
+&lt;li>what hasn&amp;rsquo;t been done/done well? What can you bring to the table?&lt;/li>
+&lt;li>There are also loads of other VR demos available - if you want to see if a kind of demo exists just Google it and you&amp;rsquo;ll probably turn something up.&lt;/li>
+&lt;li>Also check out Cardboard demos on Google Play (I recommend VRSE) to see what sort of things are happening in the non-gaming/low-end space.&lt;/li>
+&lt;/ul>
+&lt;h2 id="vr-best-practices">VR best practices&lt;/h2>
+&lt;ul>
+&lt;li>Google - &lt;a href="http://www.fastcodesign.com/3053288/3-tips-on-designing-for-vr-from-google">http://www.fastcodesign.com/3053288/3-tips-on-designing-for-vr-from-google&lt;/a>, &lt;a href="https://play.google.com/store/apps/details?id=com.google.vr.cardboard.apps.designlab">https://play.google.com/store/apps/details?id=com.google.vr.cardboard.apps.designlab&lt;/a>&lt;/li>
+&lt;li>Unreal - &lt;a href="https://docs.unrealengine.com/latest/INT/Platforms/VR/ContentSetup/index.html">https://docs.unrealengine.com/latest/INT/Platforms/VR/ContentSetup/index.html&lt;/a>&lt;/li>
+&lt;li>Oculus - &lt;a href="https://developer.oculus.com/documentation/intro-vr/latest/concepts/bp_intro/">https://developer.oculus.com/documentation/intro-vr/latest/concepts/bp_intro/&lt;/a>&lt;/li>
+&lt;li>Search for &amp;ldquo;VR best practices for [insert company/device/controller]&amp;rdquo; and you&amp;rsquo;ll probably unearth a ton of stuff&lt;/li>
+&lt;/ul>
+&lt;h2 id="unreal-engine-tutorials">Unreal Engine tutorials&lt;/h2>
+&lt;ul>
+&lt;li>Unreal has a really good YouTube series where a developer sits there and shows you how to make a demo. This was by far the most helpful way to get me oriented.
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLZlv_N0_O1gak1_FoAJVrEGiLIploeF3F">https://www.youtube.com/playlist?list=PLZlv_N0_O1gak1_FoAJVrEGiLIploeF3F&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>LayoutVR has good walkthrough guides&lt;/li>
+&lt;li>You can go read &lt;a href="https://docs.unrealengine.com/latest/INT/index.html">the official Unreal Engine guides&lt;/a> too&lt;/li>
+&lt;li>Unreal has a steep learning curve if you&amp;rsquo;ve never done game dev before, so make sure you allocate a lot of time to learning it!&lt;/li>
+&lt;/ul>
+&lt;h2 id="controllers">Controllers&lt;/h2>
+&lt;ul>
+&lt;li>This is still a huge pain point in VR, and likely the bottleneck to what you can accomplish.&lt;/li>
+&lt;li>Oculus Touch is probably your best bet if you can get your hands on it&lt;/li>
+&lt;li>Razer Hydra/Sixense STEM or the Kinect are other good&lt;/li>
+&lt;li>But really, try to find all your possible options. If the controller is not exactly commercially available yet, don&amp;rsquo;t be afraid to ask for a prototype. You won&amp;rsquo;t believe how willing people are to work with you once you drop the Stanford/Unreal/Facebook/Oculus name.&lt;/li>
+&lt;/ul>
+&lt;h2 id="mindys-teams-work-from-last-year">Mindy&amp;rsquo;s team&amp;rsquo;s work from last year&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://unrealvr.wordpress.com/">https://unrealvr.wordpress.com/&lt;/a>&lt;/li>
+&lt;li>I&amp;rsquo;ve also done stuff on the Cardboard and some product research on the space in general. Feel free to ask me any questions!&lt;/li>
+&lt;/ul>
+&lt;p>There is a LOT of information to just absorb if you&amp;rsquo;re completely new to the space.&lt;/p></description></item></channel></rss>

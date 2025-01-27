@@ -1,33 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ML Engineering on CS 210 Build Guide</title>
-    <link>https://cs210.github.io/docs/ml/</link>
-    <description>Recent content in ML Engineering on CS 210 Build Guide</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate>
-    <atom:link href="https://cs210.github.io/docs/ml/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Basic ML</title>
-      <link>https://cs210.github.io/docs/ml/basic/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/ml/basic/</guid>
-      <description>&lt;h1 id=&#34;basic-ml&#34;&gt;&#xA;  Basic ML&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#basic-ml&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p&gt;&#xA;&lt;h2 id=&#34;large-language-models-llms&#34;&gt;&#xA;  Large Language Models (LLMs)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#large-language-models-llms&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href=&#34;https://platform.openai.com/docs/quickstart?language-preference=python&#34;&gt;OpenAI API&lt;/a&gt; to make a call to a language model:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Extending LLMs</title>
-      <link>https://cs210.github.io/docs/ml/extending-llms/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/ml/extending-llms/</guid>
-      <description>&lt;h1 id=&#34;extending-llms&#34;&gt;&#xA;  Extending LLMs&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#extending-llms&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some ways to go beyond just LLMs and use your custom data. These include methods such as finetuning, RAG, and even searching over tabular data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;finetuning&#34;&gt;&#xA;  Finetuning&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#finetuning&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;rag&#34;&gt;&#xA;  RAG&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rag&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;tabular-data&#34;&gt;&#xA;  Tabular Data&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#tabular-data&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>General Advice</title>
-      <link>https://cs210.github.io/docs/ml/general-advice/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/ml/general-advice/</guid>
-      <description>&lt;h1 id=&#34;general-advice&#34;&gt;&#xA;  General Advice&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#general-advice&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p&gt;&#xA;&lt;h2 id=&#34;buy-first-not-build&#34;&gt;&#xA;  Buy first, not Build.&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#buy-first-not-build&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:1313/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">Basic ML&lt;/h1>
+&lt;p>Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p>
+&lt;h2 id="large-language-models-llms">Large Language Models (LLMs)&lt;/h2>
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python3" data-lang="python3">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> openai &lt;span style="color:#f92672">import&lt;/span> OpenAI
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>client &lt;span style="color:#f92672">=&lt;/span> OpenAI()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>completion &lt;span style="color:#f92672">=&lt;/span> client&lt;span style="color:#f92672">.&lt;/span>chat&lt;span style="color:#f92672">.&lt;/span>completions&lt;span style="color:#f92672">.&lt;/span>create(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> model&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;gpt-4o-mini&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> messages&lt;span style="color:#f92672">=&lt;/span>[
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {&lt;span style="color:#e6db74">&amp;#34;role&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;system&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;content&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;You are a helpful assistant.&amp;#34;&lt;/span>},
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#34;role&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;user&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#34;content&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Write a haiku about recursion in programming.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(completion&lt;span style="color:#f92672">.&lt;/span>choices[&lt;span style="color:#ae81ff">0&lt;/span>]&lt;span style="color:#f92672">.&lt;/span>message)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>As you continue to iterate, you may want to leverage the power of open-source models. For this, Hugging Face &amp;ndash; in particular, the &lt;a href="https://huggingface.co/sentence-transformers">SentenceTransformers&lt;/a> module &amp;ndash; will be your best friend. Just specify your language model and you&amp;rsquo;ll be good to go:&lt;/p></description></item><item><title>Extending LLMs</title><link>http://localhost:1313/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">Extending LLMs&lt;/h1>
+&lt;p>Below are some ways to go beyond just LLMs and use your custom data. These include methods such as finetuning, RAG, and even searching over tabular data.&lt;/p>
+&lt;h2 id="finetuning">Finetuning&lt;/h2>
+&lt;h2 id="rag">RAG&lt;/h2>
+&lt;h2 id="tabular-data">Tabular Data&lt;/h2></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">General Advice&lt;/h1>
+&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p>
+&lt;h2 id="buy-first-not-build">Buy first, not Build.&lt;/h2>
+&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item></channel></rss>
