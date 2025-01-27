@@ -26,7 +26,16 @@
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>node -v
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Next, create a new web project. The following command includes presets that integrate well with V0 code:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx create-next-app@latest project-name --typescript --eslint --tailwind --app --src-dir --import-alias &lt;span style="color:#e6db74">&amp;#34;@/*&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Say no to Turbopack.&lt;/p></description></item><item><title>Class Resources</title><link>http://localhost:1313/docs/class-resources/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/class-resources/</guid><description>&lt;h1 id="class-resources">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Say no to Turbopack.&lt;/p></description></item><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
+ Basic ML
+ &lt;a class="anchor" href="#basic-ml">#&lt;/a>
+&lt;/h1>
+&lt;p>Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p>
+&lt;h2 id="large-language-models-llms">
+ Large Language Models (LLMs)
+ &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
+&lt;/h2>
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Class Resources</title><link>http://localhost:1313/docs/class-resources/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/class-resources/</guid><description>&lt;h1 id="class-resources">
  Class Resources
  &lt;a class="anchor" href="#class-resources">#&lt;/a>
 &lt;/h1>
@@ -317,13 +326,4 @@
  Buy first, not Build.
  &lt;a class="anchor" href="#buy-first-not-build">#&lt;/a>
 &lt;/h2>
-&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
- Basic ML
- &lt;a class="anchor" href="#basic-ml">#&lt;/a>
-&lt;/h1>
-&lt;p>Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p>
-&lt;h2 id="large-language-models-llms">
- Large Language Models (LLMs)
- &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
-&lt;/h2>
-&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item></channel></rss>
+&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item></channel></rss>
