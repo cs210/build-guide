@@ -1,4 +1,9 @@
-<!doctype html><html lang=en-us dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
   Mobile Basics
   #
 
@@ -12,29 +17,391 @@ If you want higher performance on a specific type of device it might be worth co
   Developing and Running Apps
   #
 
-We suggest that you use expo to test your app throughout your development process. It&rsquo;s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine."><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/docs/mobile/mobilebasics/"><meta property="og:site_name" content="CS 210 Build Guide"><meta property="og:title" content="Mobile Basics"><meta property="og:description" content="Mobile Basics # Language choice # For building a mobile app we would suggest using React Native. It renders native mobile componenets and almost all code can be shared between IOS and Android.
+We suggest that you use expo to test your app throughout your development process. It&rsquo;s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://cs210.github.io/docs/mobile/mobilebasics/">
+  <meta property="og:site_name" content="CS 210 Build Guide">
+  <meta property="og:title" content="Mobile Basics">
+  <meta property="og:description" content="Mobile Basics # Language choice # For building a mobile app we would suggest using React Native. It renders native mobile componenets and almost all code can be shared between IOS and Android.
 If you want higher performance on a specific type of device it might be worth considering the use of a Swift(IOS) or Kotlin(Android).
-Developing and Running Apps # We suggest that you use expo to test your app throughout your development process. It’s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine."><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:published_time" content="2025-01-25T10:55:07-08:00"><meta property="article:modified_time" content="2025-01-25T10:55:07-08:00"><title>Mobile Basics | CS 210 Build Guide</title>
-<link rel=icon href=../../../favicon.png><link rel=manifest href=../../../manifest.json><link rel=canonical href=http://localhost:1313/docs/mobile/mobilebasics/><link rel=stylesheet href=../../../book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin=anonymous><script defer src=../../../fuse.min.js></script><script defer src=../../../en.search.min.c8ebd5ef1c23829bd5b70eb6e183f35661b107bbf3cf7f411cb6f2103359f1c4.js integrity="sha256-yOvV7xwjgpvVtw624YPzVmGxB7vzz39BHLbyEDNZ8cQ=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=../../../><span>CS 210 Build Guide</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><span>Mobile</span><ul><li><a href=../../../docs/mobile/mobilebasics/ class=active>Mobile Basics</a></li></ul></li><li><span>Web</span><ul><li><a href=../../../docs/web/frontendessentials/>Frontend Essentials</a></li><li><a href=../../../docs/web/starthere/>Start Here</a></li><li><a href=../../../docs/web/databases/>Databases</a></li></ul></li><li><span>AR/VR</span><ul><li><a href=../../../docs/vr/getting-started-in-vr/>Getting Started in VR</a></li></ul></li><li><a href=../../../docs/class-resources/>Class Resources</a></li><li><span>ML Engineering</span><ul><li><a href=../../../docs/ml/basic/>Basic ML</a></li><li><a href=../../../docs/ml/extending-llms/>Extending LLMs</a></li><li><a href=../../../docs/ml/general-advice/>General Advice</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=../../../svg/menu.svg class=book-icon alt=Menu></label><h3>Mobile Basics</h3><label for=toc-control><img src=../../../svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#language-choice>Language choice</a></li><li><a href=#developing-and-running-apps>Developing and Running Apps</a></li><li><a href=#react-native-resources>React Native Resources</a></li><li><a href=#react-native-with-expo---development-guide>React Native with Expo - Development Guide</a><ul><li><a href=#development-enviroment-setup>Development Enviroment Setup</a></li><li><a href=#essential-components-and-patterns>Essential Components and Patterns</a></li></ul></li><li><a href=#best-practices-for-beginners>Best Practices for Beginners</a></li><li><a href=#common-issues-and-solutions>Common Issues and Solutions</a></li><li><a href=#testing-your-app>Testing Your App</a></li><li><a href=#publishing-your-app>Publishing Your App</a></li><li><a href=#getting-help>Getting Help</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=mobile-basics>Mobile Basics
-<a class=anchor href=#mobile-basics>#</a></h1><h2 id=language-choice>Language choice
-<a class=anchor href=#language-choice>#</a></h2><p>For building a mobile app we would suggest using React Native. It renders native mobile componenets and almost all code can be shared between IOS and Android.</p><p>If you want higher performance on a specific type of device it might be worth considering the use of a Swift(IOS) or Kotlin(Android).</p><h2 id=developing-and-running-apps>Developing and Running Apps
-<a class=anchor href=#developing-and-running-apps>#</a></h2><p>We suggest that you use <a href=https://expo.dev/>expo</a> to test your app throughout your development process. It&rsquo;s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine.</p><p>If you need maximum flexibility, want to use or write specific, native modules, and/or have prior React Native and app development experience, consider React Native CLI.</p><h2 id=react-native-resources>React Native Resources
-<a class=anchor href=#react-native-resources>#</a></h2><p>For a simple step-by-step setup of React Native and Expo check out this <a href="https://www.youtube.com/watch?v=YysKbNk1tj0">10 minute video</a>.</p><p>For comprehensive learning resources check out the course resources for <a href="https://www.youtube.com/watch?v=YysKbNk1tj0">CS 147L</a>.</p><p>For in depth explanation check out the <a href=https://reactnative.dev/docs/getting-started>React-Native documentation</a>.</p><h2 id=react-native-with-expo---development-guide>React Native with Expo - Development Guide
-<a class=anchor href=#react-native-with-expo---development-guide>#</a></h2><h3 id=development-enviroment-setup>Development Enviroment Setup
-<a class=anchor href=#development-enviroment-setup>#</a></h3><h4 id=setup-and-installation>Setup and Installation
-<a class=anchor href=#setup-and-installation>#</a></h4><p>First, check if you have Node installed. If not, download <a href=https://nodejs.org/en>Node</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>node -v
-</span></span></code></pre></div><p>Then follow these commands:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># Install Expo CLI globally - this is like installing your main toolkit</span>
-</span></span><span style=display:flex><span>npm install -g expo-cli
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Create a new Expo project - this creates a new folder with all the basic files you need</span>
-</span></span><span style=display:flex><span>npx create-expo-app MyCapstoneProject
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Start development - this will open a development server</span>
-</span></span><span style=display:flex><span>cd MyCapstoneProject
-</span></span><span style=display:flex><span>npx expo start
-</span></span></code></pre></div><p>After running <code>npx expo start</code>, you&rsquo;ll see a QR code. Install the Expo Go app on your phone, scan this QR code, and you&rsquo;ll see your app running on your device!</p><h4 id=project-structure>Project Structure
-<a class=anchor href=#project-structure>#</a></h4><p>Starting off with good organization makes future development easier. Here is a good starting folder structure:</p><pre tabindex=0><code>MyCapstoneProject/
+Developing and Running Apps # We suggest that you use expo to test your app throughout your development process. It’s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2025-01-25T10:55:07-08:00">
+    <meta property="article:modified_time" content="2025-01-25T10:55:07-08:00">
+<title>Mobile Basics | CS 210 Build Guide</title>
+<link rel="icon" href="../../../favicon.png" >
+<link rel="manifest" href="../../../manifest.json">
+<link rel="canonical" href="https://cs210.github.io/docs/mobile/mobilebasics/">
+<link rel="stylesheet" href="../../../book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="../../../fuse.min.js"></script>
+  <script defer src="../../../en.search.min.9ab27f875ccecbfaacb42c18e6ea44063617f0bc41740ec709d3252028e9f9fb.js" integrity="sha256-mrJ/h1zOy/qstCwY5upEBjYX8LxBdA7HCdMlICjp&#43;fs=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="../../../"><span>CS 210 Build Guide</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Mobile</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/mobile/mobilebasics/" class="active">Mobile Basics</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Web</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/web/frontendessentials/" class="">Frontend Essentials</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/web/starthere/" class="">Start Here</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/web/databases/" class="">Databases</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>AR/VR</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/vr/getting-started-in-vr/" class="">Getting Started in VR</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/class-resources/" class="">Class Resources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>ML Engineering</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/ml/basic/" class="">Basic ML</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/ml/extending-llms/" class="">Extending LLMs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/ml/general-advice/" class="">General Advice</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Mobile Basics</h3>
+
+  <label for="toc-control">
+    
+    <img src="../../../svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#language-choice">Language choice</a></li>
+    <li><a href="#developing-and-running-apps">Developing and Running Apps</a></li>
+    <li><a href="#react-native-resources">React Native Resources</a></li>
+    <li><a href="#react-native-with-expo---development-guide">React Native with Expo - Development Guide</a>
+      <ul>
+        <li><a href="#development-enviroment-setup">Development Enviroment Setup</a></li>
+        <li><a href="#essential-components-and-patterns">Essential Components and Patterns</a></li>
+      </ul>
+    </li>
+    <li><a href="#best-practices-for-beginners">Best Practices for Beginners</a></li>
+    <li><a href="#common-issues-and-solutions">Common Issues and Solutions</a></li>
+    <li><a href="#testing-your-app">Testing Your App</a></li>
+    <li><a href="#publishing-your-app">Publishing Your App</a></li>
+    <li><a href="#getting-help">Getting Help</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="mobile-basics">
+  Mobile Basics
+  <a class="anchor" href="#mobile-basics">#</a>
+</h1>
+<h2 id="language-choice">
+  Language choice
+  <a class="anchor" href="#language-choice">#</a>
+</h2>
+<p>For building a mobile app we would suggest using React Native. It renders native mobile componenets and almost all code can be shared between IOS and Android.</p>
+<p>If you want higher performance on a specific type of device it might be worth considering the use of a Swift(IOS) or Kotlin(Android).</p>
+<h2 id="developing-and-running-apps">
+  Developing and Running Apps
+  <a class="anchor" href="#developing-and-running-apps">#</a>
+</h2>
+<p>We suggest that you use <a href="https://expo.dev/">expo</a> to test your app throughout your development process. It&rsquo;s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine.</p>
+<p>If you need maximum flexibility, want to use or write specific, native modules, and/or have prior React Native and app development experience, consider React Native CLI.</p>
+<h2 id="react-native-resources">
+  React Native Resources
+  <a class="anchor" href="#react-native-resources">#</a>
+</h2>
+<p>For a simple step-by-step setup of React Native and Expo check out this <a href="https://www.youtube.com/watch?v=YysKbNk1tj0">10 minute video</a>.</p>
+<p>For comprehensive learning resources check out the course resources for <a href="https://www.youtube.com/watch?v=YysKbNk1tj0">CS 147L</a>.</p>
+<p>For in depth explanation check out the <a href="https://reactnative.dev/docs/getting-started">React-Native documentation</a>.</p>
+<h2 id="react-native-with-expo---development-guide">
+  React Native with Expo - Development Guide
+  <a class="anchor" href="#react-native-with-expo---development-guide">#</a>
+</h2>
+<h3 id="development-enviroment-setup">
+  Development Enviroment Setup
+  <a class="anchor" href="#development-enviroment-setup">#</a>
+</h3>
+<h4 id="setup-and-installation">
+  Setup and Installation
+  <a class="anchor" href="#setup-and-installation">#</a>
+</h4>
+<p>First, check if you have Node installed. If not, download <a href="https://nodejs.org/en">Node</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>node -v
+</span></span></code></pre></div><p>Then follow these commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install Expo CLI globally - this is like installing your main toolkit</span>
+</span></span><span style="display:flex;"><span>npm install -g expo-cli
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a new Expo project - this creates a new folder with all the basic files you need</span>
+</span></span><span style="display:flex;"><span>npx create-expo-app MyCapstoneProject
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Start development - this will open a development server</span>
+</span></span><span style="display:flex;"><span>cd MyCapstoneProject
+</span></span><span style="display:flex;"><span>npx expo start
+</span></span></code></pre></div><p>After running <code>npx expo start</code>, you&rsquo;ll see a QR code. Install the Expo Go app on your phone, scan this QR code, and you&rsquo;ll see your app running on your device!</p>
+<h4 id="project-structure">
+  Project Structure
+  <a class="anchor" href="#project-structure">#</a>
+</h4>
+<p>Starting off with good organization makes future development easier. Here is a good starting folder structure:</p>
+<pre tabindex="0"><code>MyCapstoneProject/
 ├── assets/           # Your app&#39;s images, fonts, and other files
 ├── components/       # Reusable pieces of your app&#39;s interface
 ├── screens/         # Full pages of your app
@@ -42,164 +409,309 @@ Developing and Running Apps # We suggest that you use expo to test your app thro
 ├── hooks/           # Reusable logic
 ├── App.js           # The main file that starts your app
 └── app.json         # Settings for your app
-</code></pre><h3 id=essential-components-and-patterns>Essential Components and Patterns
-<a class=anchor href=#essential-components-and-patterns>#</a></h3><h4 id=1-creating-your-first-screen>1. Creating Your First Screen
-<a class=anchor href=#1-creating-your-first-screen>#</a></h4><p>A screen is like a full page in your app. Here&rsquo;s a basic example with explanations:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#75715e>// screens/HomeScreen.js
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>View</span>, <span style=color:#a6e22e>Text</span>, <span style=color:#a6e22e>StyleSheet</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;react-native&#39;</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>StatusBar</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;expo-status-bar&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>// This is your main screen component
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>HomeScreen</span> <span style=color:#f92672>=</span> () =&gt; {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> (
-</span></span><span style=display:flex><span>    <span style=color:#75715e>// View is like a &lt;div&gt; in web development - it&#39;s a container
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    &lt;<span style=color:#f92672>View</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span>{<span style=color:#a6e22e>styles</span>.<span style=color:#a6e22e>container</span>}&gt;
-</span></span><span style=display:flex><span>      {<span style=color:#75715e>/* StatusBar controls the top bar of the phone */</span>}
-</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>StatusBar</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;auto&#34;</span> /&gt;
-</span></span><span style=display:flex><span>      
-</span></span><span style=display:flex><span>      {<span style=color:#75715e>/* Text is used for any text you want to display */</span>}
-</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>Text</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span>{<span style=color:#a6e22e>styles</span>.<span style=color:#a6e22e>title</span>}&gt;<span style=color:#a6e22e>Welcome</span><span style=color:#f92672>!</span>&lt;/<span style=color:#f92672>Text</span>&gt;
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>View</span>&gt;
-</span></span><span style=display:flex><span>  );
-</span></span><span style=display:flex><span>};
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>// Styles in React Native are similar to CSS but with camelCase names
-</span></span></span><span style=display:flex><span><span style=color:#75715e>// They&#39;re defined using StyleSheet.create for better performance
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>styles</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>StyleSheet</span>.<span style=color:#a6e22e>create</span>({
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>container</span><span style=color:#f92672>:</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>flex</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span>,  <span style=color:#75715e>// This makes the container take up all available space
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>padding</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>16</span>,
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>alignItems</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;center&#39;</span>,  <span style=color:#75715e>// Center items horizontally
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>justifyContent</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;center&#39;</span>,  <span style=color:#75715e>// Center items vertically
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  },
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fontSize</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>24</span>,
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fontWeight</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;bold&#39;</span>,
-</span></span><span style=display:flex><span>  },
-</span></span><span style=display:flex><span>});
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#a6e22e>HomeScreen</span>;
-</span></span></code></pre></div><h4 id=2-navigation-moving-between-screens>2. Navigation (Moving Between Screens)
-<a class=anchor href=#2-navigation-moving-between-screens>#</a></h4><p>Navigation is how users move between different screens in your app. Think of it like changing pages in a book:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#75715e>// navigation/AppNavigator.js
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>NavigationContainer</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;@react-navigation/native&#39;</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>createNativeStackNavigator</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;@react-navigation/native-stack&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>// Stack navigation works like a stack of cards
-</span></span></span><span style=display:flex><span><span style=color:#75715e>// You can push new screens on top and pop them off to go back
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>Stack</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>createNativeStackNavigator</span>();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>AppNavigator</span> <span style=color:#f92672>=</span> () =&gt; {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> (
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>NavigationContainer</span>&gt;
-</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>Stack.Navigator</span>&gt;
-</span></span><span style=display:flex><span>        {<span style=color:#75715e>/* Each Screen component is like a page in your app */</span>}
-</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>Stack.Screen</span> 
-</span></span><span style=display:flex><span>          <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Home&#34;</span> 
-</span></span><span style=display:flex><span>          <span style=color:#a6e22e>component</span><span style=color:#f92672>=</span>{<span style=color:#a6e22e>HomeScreen</span>}
-</span></span><span style=display:flex><span>          <span style=color:#a6e22e>options</span><span style=color:#f92672>=</span>{{ 
-</span></span><span style=display:flex><span>            <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;Home&#39;</span>,  <span style=color:#75715e>// This appears at the top of the screen
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>            <span style=color:#a6e22e>headerStyle</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>backgroundColor</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;#f4511e&#39;</span> },  <span style=color:#75715e>// Customize the header
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>            <span style=color:#a6e22e>headerTintColor</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;#fff&#39;</span>,  <span style=color:#75715e>// Color of the header text
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>          }} 
-</span></span><span style=display:flex><span>        /&gt;
-</span></span><span style=display:flex><span>      &lt;/<span style=color:#f92672>Stack.Navigator</span>&gt;
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>NavigationContainer</span>&gt;
-</span></span><span style=display:flex><span>  );
-</span></span><span style=display:flex><span>};
-</span></span></code></pre></div><h4 id=3-working-with-data-api-calls>3. Working with Data (API Calls)
-<a class=anchor href=#3-working-with-data-api-calls>#</a></h4><p>Most apps need to fetch data from the internet. Here&rsquo;s a reusable way to do that:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#75715e>// hooks/useApi.js
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>useState</span>, <span style=color:#a6e22e>useEffect</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;react&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>// This is a custom hook - a reusable piece of logic
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>useApi</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>url</span>) =&gt; {
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// useState is used to store and update data
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>const</span> [<span style=color:#a6e22e>data</span>, <span style=color:#a6e22e>setData</span>] <span style=color:#f92672>=</span> <span style=color:#a6e22e>useState</span>(<span style=color:#66d9ef>null</span>);
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> [<span style=color:#a6e22e>loading</span>, <span style=color:#a6e22e>setLoading</span>] <span style=color:#f92672>=</span> <span style=color:#a6e22e>useState</span>(<span style=color:#66d9ef>true</span>);
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> [<span style=color:#a6e22e>error</span>, <span style=color:#a6e22e>setError</span>] <span style=color:#f92672>=</span> <span style=color:#a6e22e>useState</span>(<span style=color:#66d9ef>null</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// useEffect runs when the component is first shown
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>useEffect</span>(() =&gt; {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fetchData</span>();
-</span></span><span style=display:flex><span>  }, [<span style=color:#a6e22e>url</span>]);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// This function gets data from the internet
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>fetchData</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> () =&gt; {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>try</span> {
-</span></span><span style=display:flex><span>      <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>response</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>fetch</span>(<span style=color:#a6e22e>url</span>);
-</span></span><span style=display:flex><span>      <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>json</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>response</span>.<span style=color:#a6e22e>json</span>();
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>setData</span>(<span style=color:#a6e22e>json</span>);
-</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>catch</span> (<span style=color:#a6e22e>err</span>) {
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>setError</span>(<span style=color:#a6e22e>err</span>.<span style=color:#a6e22e>message</span>);
-</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>finally</span> {
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>setLoading</span>(<span style=color:#66d9ef>false</span>);
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>  };
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> { <span style=color:#a6e22e>data</span>, <span style=color:#a6e22e>loading</span>, <span style=color:#a6e22e>error</span> };
-</span></span><span style=display:flex><span>};
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>// Example of using this hook in a component
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>MyComponent</span> <span style=color:#f92672>=</span> () =&gt; {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> { <span style=color:#a6e22e>data</span>, <span style=color:#a6e22e>loading</span>, <span style=color:#a6e22e>error</span> } <span style=color:#f92672>=</span> <span style=color:#a6e22e>useApi</span>(<span style=color:#e6db74>&#39;https://api.example.com/data&#39;</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// Show a loading spinner while waiting for data
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>loading</span>) <span style=color:#66d9ef>return</span> &lt;<span style=color:#f92672>ActivityIndicator</span> /&gt;;
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// Show an error message if something went wrong
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>error</span>) <span style=color:#66d9ef>return</span> &lt;<span style=color:#f92672>Text</span>&gt;Error<span style=color:#f92672>:</span> {<span style=color:#a6e22e>error</span>}&lt;/<span style=color:#f92672>Text</span>&gt;;
-</span></span><span style=display:flex><span>  
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// Show the data once it&#39;s loaded
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>return</span> &lt;<span style=color:#f92672>Text</span>&gt;{<span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>title</span>}&lt;/<span style=color:#f92672>Text</span>&gt;;
-</span></span><span style=display:flex><span>};
-</span></span></code></pre></div><h4 id=4-working-with-images>4. Working with Images
-<a class=anchor href=#4-working-with-images>#</a></h4><p>Images are a crucial part of most apps. Here&rsquo;s how to handle them in Expo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#75715e>// components/ProfileImage.js
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>Image</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;react-native&#39;</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>Asset</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;expo-asset&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>ProfileImage</span> <span style=color:#f92672>=</span> ({ <span style=color:#a6e22e>uri</span> }) =&gt; {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> (
-</span></span><span style=display:flex><span>    <span style=color:#75715e>// uri is the internet address of the image
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// The placeholder image shows while the main image is loading
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    &lt;<span style=color:#f92672>Image</span>
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>source</span><span style=color:#f92672>=</span>{{ <span style=color:#a6e22e>uri</span> }}
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span>{{ <span style=color:#a6e22e>width</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>100</span>, <span style=color:#a6e22e>height</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>100</span>, <span style=color:#a6e22e>borderRadius</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>50</span> }}
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>defaultSource</span><span style=color:#f92672>=</span>{<span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;../assets/placeholder.png&#39;</span>)}
-</span></span><span style=display:flex><span>    /&gt;
-</span></span><span style=display:flex><span>  );
-</span></span><span style=display:flex><span>};
-</span></span></code></pre></div><h4 id=5-storing-data-locally>5. Storing Data Locally
-<a class=anchor href=#5-storing-data-locally>#</a></h4><p>Sometimes you need to save data on the device (like user settings or login information):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#75715e>// utils/storage.js
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>import</span> <span style=color:#f92672>*</span> <span style=color:#a6e22e>as</span> <span style=color:#a6e22e>SecureStore</span> <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;expo-secure-store&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>// Save data securely on the device
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>saveData</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> (<span style=color:#a6e22e>key</span>, <span style=color:#a6e22e>value</span>) =&gt; {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>try</span> {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>SecureStore</span>.<span style=color:#a6e22e>setItemAsync</span>(<span style=color:#a6e22e>key</span>, <span style=color:#a6e22e>JSON</span>.<span style=color:#a6e22e>stringify</span>(<span style=color:#a6e22e>value</span>));
-</span></span><span style=display:flex><span>  } <span style=color:#66d9ef>catch</span> (<span style=color:#a6e22e>error</span>) {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>error</span>(<span style=color:#e6db74>&#39;Error saving data:&#39;</span>, <span style=color:#a6e22e>error</span>);
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>};
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>// Get data that was previously saved
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>getData</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> (<span style=color:#a6e22e>key</span>) =&gt; {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>try</span> {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>value</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>SecureStore</span>.<span style=color:#a6e22e>getItemAsync</span>(<span style=color:#a6e22e>key</span>);
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>value</span> <span style=color:#f92672>?</span> <span style=color:#a6e22e>JSON</span>.<span style=color:#a6e22e>parse</span>(<span style=color:#a6e22e>value</span>) <span style=color:#f92672>:</span> <span style=color:#66d9ef>null</span>;
-</span></span><span style=display:flex><span>  } <span style=color:#66d9ef>catch</span> (<span style=color:#a6e22e>error</span>) {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>error</span>(<span style=color:#e6db74>&#39;Error retrieving data:&#39;</span>, <span style=color:#a6e22e>error</span>);
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>null</span>;
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>};
-</span></span></code></pre></div><h2 id=best-practices-for-beginners>Best Practices for Beginners
-<a class=anchor href=#best-practices-for-beginners>#</a></h2><ol><li><strong>Start Small</strong>: Begin with a simple screen and add features gradually</li><li><strong>Use Console.log</strong>: When something&rsquo;s not working, use console.log to print values and understand what&rsquo;s happening</li><li><strong>Test Frequently</strong>: Make small changes and test them right away on your device</li><li><strong>Keep Components Small</strong>: Break your screens into smaller, reusable components</li><li><strong>Learn from Errors</strong>: Read error messages carefully - they often tell you exactly what&rsquo;s wrong</li></ol><h2 id=common-issues-and-solutions>Common Issues and Solutions
-<a class=anchor href=#common-issues-and-solutions>#</a></h2><ol><li><strong>App Not Updating</strong>: Try restarting the Expo server (press &lsquo;r&rsquo; in the terminal)</li><li><strong>Styling Not Working</strong>: Make sure you&rsquo;re using the correct style properties (they&rsquo;re slightly different from CSS)</li><li><strong>Can&rsquo;t Connect to Device</strong>: Ensure your phone and computer are on the same WiFi network</li><li><strong>Images Not Loading</strong>: Double-check the image path and make sure the image exists</li></ol><h2 id=testing-your-app>Testing Your App
-<a class=anchor href=#testing-your-app>#</a></h2><p>The easiest way to test your app is using the Expo Go app on your phone:</p><ol><li>Start your development server (<code>npx expo start</code>)</li><li>Open Expo Go on your phone</li><li>Scan the QR code from your terminal</li><li>The app will load on your device</li></ol><h2 id=publishing-your-app>Publishing Your App
-<a class=anchor href=#publishing-your-app>#</a></h2><p>When you&rsquo;re ready to share your app:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># Create a production version</span>
-</span></span><span style=display:flex><span>expo build:android  <span style=color:#75715e># For Android</span>
-</span></span><span style=display:flex><span>expo build:ios      <span style=color:#75715e># For iOS</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Test the production version</span>
-</span></span><span style=display:flex><span>expo start --no-dev --minify
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Share your app through Expo</span>
-</span></span><span style=display:flex><span>expo publish
-</span></span></code></pre></div><h2 id=getting-help>Getting Help
-<a class=anchor href=#getting-help>#</a></h2><ol><li>Check the <a href=https://docs.expo.dev>Expo Documentation</a></li><li>Leverage your favorite AI chatbot</li><li>Look for similar issues on Stack Overflow</li><li>Join the Expo Discord community</li></ol><p>Remember: Everyone starts somewhere, and it&rsquo;s okay to make mistakes. The key is to learn from them and keep building!</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#language-choice>Language choice</a></li><li><a href=#developing-and-running-apps>Developing and Running Apps</a></li><li><a href=#react-native-resources>React Native Resources</a></li><li><a href=#react-native-with-expo---development-guide>React Native with Expo - Development Guide</a><ul><li><a href=#development-enviroment-setup>Development Enviroment Setup</a></li><li><a href=#essential-components-and-patterns>Essential Components and Patterns</a></li></ul></li><li><a href=#best-practices-for-beginners>Best Practices for Beginners</a></li><li><a href=#common-issues-and-solutions>Common Issues and Solutions</a></li><li><a href=#testing-your-app>Testing Your App</a></li><li><a href=#publishing-your-app>Publishing Your App</a></li><li><a href=#getting-help>Getting Help</a></li></ul></nav></div></aside></main></body></html>
+</code></pre><h3 id="essential-components-and-patterns">
+  Essential Components and Patterns
+  <a class="anchor" href="#essential-components-and-patterns">#</a>
+</h3>
+<h4 id="1-creating-your-first-screen">
+  1. Creating Your First Screen
+  <a class="anchor" href="#1-creating-your-first-screen">#</a>
+</h4>
+<p>A screen is like a full page in your app. Here&rsquo;s a basic example with explanations:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#75715e">// screens/HomeScreen.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">View</span>, <span style="color:#a6e22e">Text</span>, <span style="color:#a6e22e">StyleSheet</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-native&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">StatusBar</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;expo-status-bar&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// This is your main screen component
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">HomeScreen</span> <span style="color:#f92672">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// View is like a &lt;div&gt; in web development - it&#39;s a container
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    &lt;<span style="color:#f92672">View</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">container</span>}&gt;
+</span></span><span style="display:flex;"><span>      {<span style="color:#75715e">/* StatusBar controls the top bar of the phone */</span>}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">StatusBar</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auto&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>      {<span style="color:#75715e">/* Text is used for any text you want to display */</span>}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">Text</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">title</span>}&gt;<span style="color:#a6e22e">Welcome</span><span style="color:#f92672">!</span>&lt;/<span style="color:#f92672">Text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">View</span>&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Styles in React Native are similar to CSS but with camelCase names
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// They&#39;re defined using StyleSheet.create for better performance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">styles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">StyleSheet</span>.<span style="color:#a6e22e">create</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">container</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">flex</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,  <span style="color:#75715e">// This makes the container take up all available space
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">padding</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">16</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">alignItems</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;center&#39;</span>,  <span style="color:#75715e">// Center items horizontally
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">justifyContent</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;center&#39;</span>,  <span style="color:#75715e">// Center items vertically
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fontSize</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">24</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fontWeight</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bold&#39;</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">HomeScreen</span>;
+</span></span></code></pre></div><h4 id="2-navigation-moving-between-screens">
+  2. Navigation (Moving Between Screens)
+  <a class="anchor" href="#2-navigation-moving-between-screens">#</a>
+</h4>
+<p>Navigation is how users move between different screens in your app. Think of it like changing pages in a book:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#75715e">// navigation/AppNavigator.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">NavigationContainer</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@react-navigation/native&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createNativeStackNavigator</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@react-navigation/native-stack&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Stack navigation works like a stack of cards
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// You can push new screens on top and pop them off to go back
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Stack</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createNativeStackNavigator</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">AppNavigator</span> <span style="color:#f92672">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">NavigationContainer</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">Stack.Navigator</span>&gt;
+</span></span><span style="display:flex;"><span>        {<span style="color:#75715e">/* Each Screen component is like a page in your app */</span>}
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">Stack.Screen</span> 
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Home&#34;</span> 
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">component</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">HomeScreen</span>}
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">options</span><span style="color:#f92672">=</span>{{ 
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Home&#39;</span>,  <span style="color:#75715e">// This appears at the top of the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#a6e22e">headerStyle</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#f4511e&#39;</span> },  <span style="color:#75715e">// Customize the header
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#a6e22e">headerTintColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#fff&#39;</span>,  <span style="color:#75715e">// Color of the header text
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          }} 
+</span></span><span style="display:flex;"><span>        /&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">Stack.Navigator</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">NavigationContainer</span>&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h4 id="3-working-with-data-api-calls">
+  3. Working with Data (API Calls)
+  <a class="anchor" href="#3-working-with-data-api-calls">#</a>
+</h4>
+<p>Most apps need to fetch data from the internet. Here&rsquo;s a reusable way to do that:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#75715e">// hooks/useApi.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">useState</span>, <span style="color:#a6e22e">useEffect</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// This is a custom hook - a reusable piece of logic
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">useApi</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">url</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// useState is used to store and update data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">data</span>, <span style="color:#a6e22e">setData</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#66d9ef">null</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">loading</span>, <span style="color:#a6e22e">setLoading</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">error</span>, <span style="color:#a6e22e">setError</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#66d9ef">null</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// useEffect runs when the component is first shown
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">useEffect</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fetchData</span>();
+</span></span><span style="display:flex;"><span>  }, [<span style="color:#a6e22e">url</span>]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// This function gets data from the internet
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fetchData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">json</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">setData</span>(<span style="color:#a6e22e">json</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">err</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">setError</span>(<span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">finally</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">setLoading</span>(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">data</span>, <span style="color:#a6e22e">loading</span>, <span style="color:#a6e22e">error</span> };
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Example of using this hook in a component
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">MyComponent</span> <span style="color:#f92672">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">data</span>, <span style="color:#a6e22e">loading</span>, <span style="color:#a6e22e">error</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">useApi</span>(<span style="color:#e6db74">&#39;https://api.example.com/data&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Show a loading spinner while waiting for data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loading</span>) <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">ActivityIndicator</span> /&gt;;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Show an error message if something went wrong
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">error</span>) <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">Text</span>&gt;Error<span style="color:#f92672">:</span> {<span style="color:#a6e22e">error</span>}&lt;/<span style="color:#f92672">Text</span>&gt;;
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Show the data once it&#39;s loaded
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">Text</span>&gt;{<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">title</span>}&lt;/<span style="color:#f92672">Text</span>&gt;;
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h4 id="4-working-with-images">
+  4. Working with Images
+  <a class="anchor" href="#4-working-with-images">#</a>
+</h4>
+<p>Images are a crucial part of most apps. Here&rsquo;s how to handle them in Expo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#75715e">// components/ProfileImage.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Image</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-native&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Asset</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;expo-asset&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ProfileImage</span> <span style="color:#f92672">=</span> ({ <span style="color:#a6e22e">uri</span> }) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// uri is the internet address of the image
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// The placeholder image shows while the main image is loading
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    &lt;<span style="color:#f92672">Image</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">source</span><span style="color:#f92672">=</span>{{ <span style="color:#a6e22e">uri</span> }}
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{{ <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>, <span style="color:#a6e22e">height</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>, <span style="color:#a6e22e">borderRadius</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">50</span> }}
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">defaultSource</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;../assets/placeholder.png&#39;</span>)}
+</span></span><span style="display:flex;"><span>    /&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h4 id="5-storing-data-locally">
+  5. Storing Data Locally
+  <a class="anchor" href="#5-storing-data-locally">#</a>
+</h4>
+<p>Sometimes you need to save data on the device (like user settings or login information):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#75715e">// utils/storage.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">SecureStore</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;expo-secure-store&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Save data securely on the device
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">saveData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">SecureStore</span>.<span style="color:#a6e22e">setItemAsync</span>(<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">value</span>));
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Error saving data:&#39;</span>, <span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Get data that was previously saved
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">key</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">SecureStore</span>.<span style="color:#a6e22e">getItemAsync</span>(<span style="color:#a6e22e">key</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">value</span>) <span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Error retrieving data:&#39;</span>, <span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h2 id="best-practices-for-beginners">
+  Best Practices for Beginners
+  <a class="anchor" href="#best-practices-for-beginners">#</a>
+</h2>
+<ol>
+<li><strong>Start Small</strong>: Begin with a simple screen and add features gradually</li>
+<li><strong>Use Console.log</strong>: When something&rsquo;s not working, use console.log to print values and understand what&rsquo;s happening</li>
+<li><strong>Test Frequently</strong>: Make small changes and test them right away on your device</li>
+<li><strong>Keep Components Small</strong>: Break your screens into smaller, reusable components</li>
+<li><strong>Learn from Errors</strong>: Read error messages carefully - they often tell you exactly what&rsquo;s wrong</li>
+</ol>
+<h2 id="common-issues-and-solutions">
+  Common Issues and Solutions
+  <a class="anchor" href="#common-issues-and-solutions">#</a>
+</h2>
+<ol>
+<li><strong>App Not Updating</strong>: Try restarting the Expo server (press &lsquo;r&rsquo; in the terminal)</li>
+<li><strong>Styling Not Working</strong>: Make sure you&rsquo;re using the correct style properties (they&rsquo;re slightly different from CSS)</li>
+<li><strong>Can&rsquo;t Connect to Device</strong>: Ensure your phone and computer are on the same WiFi network</li>
+<li><strong>Images Not Loading</strong>: Double-check the image path and make sure the image exists</li>
+</ol>
+<h2 id="testing-your-app">
+  Testing Your App
+  <a class="anchor" href="#testing-your-app">#</a>
+</h2>
+<p>The easiest way to test your app is using the Expo Go app on your phone:</p>
+<ol>
+<li>Start your development server (<code>npx expo start</code>)</li>
+<li>Open Expo Go on your phone</li>
+<li>Scan the QR code from your terminal</li>
+<li>The app will load on your device</li>
+</ol>
+<h2 id="publishing-your-app">
+  Publishing Your App
+  <a class="anchor" href="#publishing-your-app">#</a>
+</h2>
+<p>When you&rsquo;re ready to share your app:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Create a production version</span>
+</span></span><span style="display:flex;"><span>expo build:android  <span style="color:#75715e"># For Android</span>
+</span></span><span style="display:flex;"><span>expo build:ios      <span style="color:#75715e"># For iOS</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Test the production version</span>
+</span></span><span style="display:flex;"><span>expo start --no-dev --minify
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Share your app through Expo</span>
+</span></span><span style="display:flex;"><span>expo publish
+</span></span></code></pre></div><h2 id="getting-help">
+  Getting Help
+  <a class="anchor" href="#getting-help">#</a>
+</h2>
+<ol>
+<li>Check the <a href="https://docs.expo.dev">Expo Documentation</a></li>
+<li>Leverage your favorite AI chatbot</li>
+<li>Look for similar issues on Stack Overflow</li>
+<li>Join the Expo Discord community</li>
+</ol>
+<p>Remember: Everyone starts somewhere, and it&rsquo;s okay to make mistakes. The key is to learn from them and keep building!</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#language-choice">Language choice</a></li>
+    <li><a href="#developing-and-running-apps">Developing and Running Apps</a></li>
+    <li><a href="#react-native-resources">React Native Resources</a></li>
+    <li><a href="#react-native-with-expo---development-guide">React Native with Expo - Development Guide</a>
+      <ul>
+        <li><a href="#development-enviroment-setup">Development Enviroment Setup</a></li>
+        <li><a href="#essential-components-and-patterns">Essential Components and Patterns</a></li>
+      </ul>
+    </li>
+    <li><a href="#best-practices-for-beginners">Best Practices for Beginners</a></li>
+    <li><a href="#common-issues-and-solutions">Common Issues and Solutions</a></li>
+    <li><a href="#testing-your-app">Testing Your App</a></li>
+    <li><a href="#publishing-your-app">Publishing Your App</a></li>
+    <li><a href="#getting-help">Getting Help</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
