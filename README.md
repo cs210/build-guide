@@ -10,6 +10,12 @@ This website uses the [Hugo Book](https://github.com/alex-shpak/hugo-book) Hugo 
 git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
 ```
 
+You my also need to update the submodule:
+
+```bash
+git submodule update --init --recursive
+```
+
 Since the config file has already been updated, you can then run the server:
 
 ```bash
@@ -22,19 +28,4 @@ All the documents are in the `content/docs` folder. In particular, you can follo
 
 ## Deployment
 
-To deploy, first, we can generate the static `public` folder:
-
-```bash
-hugo -D
-```
-
-We currently use GitHub Pages to host our site, so we can then push the `public` folder to the `gh-pages` branch as below:
-
-```bash
-git init
-git remote add origin https://github.com/cs210/build-guide.git
-git branch -M gh-pages
-git add .
-git commit -m "Deploy Hugo site"
-git push -f origin gh-pages
-```
+The website publishes to this [link](https://cs210.github.io/build-guide/) on every push to `main`.

@@ -1,33 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ML Engineering on CS 210 Build Guide</title>
-    <link>https://cs210.github.io/docs/ml/</link>
-    <description>Recent content in ML Engineering on CS 210 Build Guide</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate>
-    <atom:link href="https://cs210.github.io/docs/ml/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Extending LLMs</title>
-      <link>https://cs210.github.io/docs/ml/extending-llms/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/ml/extending-llms/</guid>
-      <description>&lt;h1 id=&#34;extending-llms&#34;&gt;&#xA;  Extending LLMs&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#extending-llms&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some ways to go beyond just LLMs and use your custom data. These include methods such as Retrieval Augmented Generation (RAG), finetuning, and even searching over tabular data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;retrieval-augmented-generation&#34;&gt;&#xA;  Retrieval Augmented Generation&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#retrieval-augmented-generation&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Language models are typically pretrained on vast amounts of data, but they may require updated information or data tailored to a specific use case. Retraining a language model on a large amount of data might prove to be expensive. In many scenarios, extending large language models with external knowledge bases becomes essential to provide relevant and accurate outputs. This is where &lt;strong&gt;Retrieval-Augmented Generation (RAG)&lt;/strong&gt; comes into play. RAG consists of two key components: a retrieval system to identify relevant items or contextual information and a mechanism to integrate that information into the model&amp;rsquo;s output, often through prompting.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>General Advice</title>
-      <link>https://cs210.github.io/docs/ml/general-advice/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/ml/general-advice/</guid>
-      <description>&lt;h1 id=&#34;general-advice&#34;&gt;&#xA;  General Advice&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#general-advice&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p&gt;&#xA;&lt;h2 id=&#34;buy-first-not-build&#34;&gt;&#xA;  Buy first, not Build.&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#buy-first-not-build&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Basic ML</title>
-      <link>https://cs210.github.io/docs/ml/basic/</link>
-      <pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/ml/basic/</guid>
-      <description>&lt;h1 id=&#34;basic-ml&#34;&gt;&#xA;  Basic ML&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#basic-ml&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p&gt;&#xA;&lt;h2 id=&#34;large-language-models-llms&#34;&gt;&#xA;  Large Language Models (LLMs)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#large-language-models-llms&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href=&#34;https://platform.openai.com/docs/quickstart?language-preference=python&#34;&gt;OpenAI API&lt;/a&gt; to make a call to a language model:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:1313/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Extending LLMs</title><link>http://localhost:1313/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
+ Extending LLMs
+ &lt;a class="anchor" href="#extending-llms">#&lt;/a>
+&lt;/h1>
+&lt;p>Below are some ways to go beyond just LLMs and use your custom data. These include methods such as Retrieval Augmented Generation (RAG), finetuning, and even searching over tabular data.&lt;/p>
+&lt;h2 id="retrieval-augmented-generation">
+ Retrieval Augmented Generation
+ &lt;a class="anchor" href="#retrieval-augmented-generation">#&lt;/a>
+&lt;/h2>
+&lt;p>Language models are typically pretrained on vast amounts of data, but they may require updated information or data tailored to a specific use case. Retraining a language model on a large amount of data might prove to be expensive. In many scenarios, extending large language models with external knowledge bases becomes essential to provide relevant and accurate outputs. This is where &lt;strong>Retrieval-Augmented Generation (RAG)&lt;/strong> comes into play. RAG consists of two key components: a retrieval system to identify relevant items or contextual information and a mechanism to integrate that information into the model&amp;rsquo;s output, often through prompting.&lt;/p></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
+ General Advice
+ &lt;a class="anchor" href="#general-advice">#&lt;/a>
+&lt;/h1>
+&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p>
+&lt;h2 id="buy-first-not-build">
+ Buy first, not Build.
+ &lt;a class="anchor" href="#buy-first-not-build">#&lt;/a>
+&lt;/h2>
+&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
+ Basic ML
+ &lt;a class="anchor" href="#basic-ml">#&lt;/a>
+&lt;/h1>
+&lt;p>Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p>
+&lt;h2 id="large-language-models-llms">
+ Large Language Models (LLMs)
+ &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
+&lt;/h2>
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item></channel></rss>
