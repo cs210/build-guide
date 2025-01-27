@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:49992/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:49992/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic ML</title><link>http://localhost:49992/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:1313/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
  Basic ML
  &lt;a class="anchor" href="#basic-ml">#&lt;/a>
 &lt;/h1>
@@ -7,23 +7,25 @@
  Large Language Models (LLMs)
  &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
 &lt;/h2>
-&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Extending LLMs</title><link>http://localhost:49992/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Extending LLMs</title><link>http://localhost:1313/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
  Extending LLMs
  &lt;a class="anchor" href="#extending-llms">#&lt;/a>
 &lt;/h1>
 &lt;p>Below are some ways to go beyond just LLMs and use your custom data. These include methods such as finetuning, RAG, and even searching over tabular data.&lt;/p>
-&lt;h2 id="finetuning">
- Finetuning
- &lt;a class="anchor" href="#finetuning">#&lt;/a>
-&lt;/h2>
 &lt;h2 id="rag">
  RAG
  &lt;a class="anchor" href="#rag">#&lt;/a>
 &lt;/h2>
-&lt;h2 id="tabular-data">
- Tabular Data
- &lt;a class="anchor" href="#tabular-data">#&lt;/a>
-&lt;/h2></description></item><item><title>General Advice</title><link>http://localhost:49992/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
+&lt;ul>
+&lt;li>Language models: pretrained on lots of data, but you might need more updated data, or data specific to your use case/liaison&lt;/li>
+&lt;li>Oftentimes, will want to extend large language models with external knowledge bases.&lt;/li>
+&lt;li>This is where RAG comes in. RAG involves two part: a retrieval system where you can find relevant items or context, and a part where you use that to improve model output (typically by prompting)&lt;/li>
+&lt;/ul>
+&lt;h3 id="example">
+ Example
+ &lt;a class="anchor" href="#example">#&lt;/a>
+&lt;/h3>
+&lt;p>Regarding the knowledge base, you will often use some sort of embedding model &amp;ndash; which can encode information into a lower dimensional space &amp;ndash; and a vector database &amp;ndash; which can help perform similarity search across that same dimension space. A popular example here is &lt;code>chroma&lt;/code>, but there are several others that might be available (Pinecone, &lt;code>pgvector&lt;/code>, etc.). A simple code example is below, and there are several more great tutorials out there:&lt;/p></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
  General Advice
  &lt;a class="anchor" href="#general-advice">#&lt;/a>
 &lt;/h1>

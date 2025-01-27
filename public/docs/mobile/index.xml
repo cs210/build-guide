@@ -1,6 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mobile on CS 210 Build Guide</title><link>http://localhost:1313/docs/mobile/</link><description>Recent content in Mobile on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>Mobile Basics</title><link>http://localhost:1313/docs/mobile/mobilebasics/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/mobile/mobilebasics/</guid><description>&lt;h1 id="mobile-basics">Mobile Basics&lt;/h1>
-&lt;h2 id="language-choice">Language choice&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mobile on CS 210 Build Guide</title><link>http://localhost:1313/docs/mobile/</link><description>Recent content in Mobile on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>Mobile Basics</title><link>http://localhost:1313/docs/mobile/mobilebasics/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/mobile/mobilebasics/</guid><description>&lt;h1 id="mobile-basics">
+ Mobile Basics
+ &lt;a class="anchor" href="#mobile-basics">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="language-choice">
+ Language choice
+ &lt;a class="anchor" href="#language-choice">#&lt;/a>
+&lt;/h2>
 &lt;p>For building a mobile app we would suggest using React Native. It renders native mobile componenets and almost all code can be shared between IOS and Android.&lt;/p>
 &lt;p>If you want higher performance on a specific type of device it might be worth considering the use of a Swift(IOS) or Kotlin(Android).&lt;/p>
-&lt;h2 id="developing-and-running-apps">Developing and Running Apps&lt;/h2>
+&lt;h2 id="developing-and-running-apps">
+ Developing and Running Apps
+ &lt;a class="anchor" href="#developing-and-running-apps">#&lt;/a>
+&lt;/h2>
 &lt;p>We suggest that you use &lt;a href="https://expo.dev/">expo&lt;/a> to test your app throughout your development process. It&amp;rsquo;s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine.&lt;/p></description></item></channel></rss>

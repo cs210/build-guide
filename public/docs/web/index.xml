@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on CS 210 Build Guide</title><link>http://localhost:49992/docs/web/</link><description>Recent content in Web on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:49992/docs/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Frontend Essentials</title><link>http://localhost:49992/docs/web/frontendessentials/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/web/frontendessentials/</guid><description>&lt;h1 id="frontend-development-guide-for-nextjs">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on CS 210 Build Guide</title><link>http://localhost:1313/docs/web/</link><description>Recent content in Web on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Frontend Essentials</title><link>http://localhost:1313/docs/web/frontendessentials/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/frontendessentials/</guid><description>&lt;h1 id="frontend-development-guide-for-nextjs">
  Frontend Development Guide for Next.js
  &lt;a class="anchor" href="#frontend-development-guide-for-nextjs">#&lt;/a>
 &lt;/h1>
@@ -48,7 +48,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> )
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This Card component demonstrates several best practices:&lt;/p></description></item><item><title>Start Here</title><link>http://localhost:49992/docs/web/starthere/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/web/starthere/</guid><description>&lt;h1 id="basic-website-setup">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This Card component demonstrates several best practices:&lt;/p></description></item><item><title>Start Here</title><link>http://localhost:1313/docs/web/starthere/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/starthere/</guid><description>&lt;h1 id="basic-website-setup">
  Basic Website Setup
  &lt;a class="anchor" href="#basic-website-setup">#&lt;/a>
 &lt;/h1>
@@ -62,7 +62,7 @@
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>node -v
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Next, create a new web project. The following command includes presets that integrate well with V0 code:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx create-next-app@latest project-name --typescript --eslint --tailwind --app --src-dir --import-alias &lt;span style="color:#e6db74">&amp;#34;@/*&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Say no to Turbopack.&lt;/p></description></item><item><title/><link>http://localhost:49992/docs/web/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:49992/docs/web/databases/</guid><description>&lt;h1 id="databases">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Say no to Turbopack.&lt;/p></description></item><item><title/><link>http://localhost:1313/docs/web/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/web/databases/</guid><description>&lt;h1 id="databases">
  Databases
  &lt;a class="anchor" href="#databases">#&lt;/a>
 &lt;/h1>
