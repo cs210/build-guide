@@ -5,7 +5,6 @@ title = 'Extending LLMs'
 +++
 
 # Extending LLMs
-
 Below are some ways to go beyond just LLMs and use your custom data. These include methods such as Retrieval Augmented Generation (RAG), finetuning, and even searching over tabular data.
 
 ## Retrieval Augmented Generation
@@ -70,6 +69,56 @@ for i, doc in enumerate(results["documents"][0]):
     print(f"{i + 1}. {doc}")
 ```
 
-## Finetuning
+Using these documents, we can then use them when prompting a final language model to improve overall responses. Finding the best way to prompt a model is also known as [prompt engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/), and there are several popular methods, including chain-of-thought (including the model's reasoning step-by-step) as well as few-shot prompting (providing a few sample examples).
 
-## Tabular Data
+## Finetuning Language Models
+Sometimes, prompting isn't enough. You may want to adjust and steer the tone of a large language model (LLM) or train it on additional examples that exceed the limits of a single prompt. To achieve this, fine-tuning is a powerful tool.
+
+Fine-tuning is the process of adapting a pre-trained model for specific tasks or use cases. It is significantly easier and more cost-effective to improve a base model through fine-tuning than to train a model from scratch.
+
+During rapid prototyping, you'll likely rely on a pre-trained LLM. If needed, there are well-documented ways to fine-tune pre-trained LLMs ([OpenAI Fine-Tuning Guide](https://platform.openai.com/docs/guides/fine-tuning)). The most important steps in fine-tuning include:
+
+- **Preparing your data**: Ensure your dataset is in the correct format, and include both positive and negative examples so the LLM can learn to handle a variety of scenarios effectively.
+- **Choosing the right dataset size**: A minimum of 10 examples can be sufficient, but you’ll observe clearer improvements with 50–100 examples or more.
+- **Setting up evaluations**: Create a set of prompts that can be used to test and measure the fine-tuned model’s performance against your desired outcomes.
+
+Once the data and evaluations are ready, you can initiate a fine-tuning job using OpenAI's API:
+
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+job = client.fine_tuning.jobs.create(
+    training_file="file-all-about-the-weather",
+    model="gpt-4o-2024-08-06",
+    method={
+        "type": "dpo",
+        "dpo": {
+            "hyperparameters": {"beta": 0.1},
+        },
+    },
+)
+```
+
+After fine-tuning, you can use the customized model in your application:
+
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+completion = client.chat.completions.create(
+    model="ft:gpt-4o-mini:my-org:custom_suffix:id",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Hello!"}
+    ]
+)
+
+print(completion.choices[0].message)
+```
+
+You can experiment with different hyperparameters to improve the performance of your fine-tuned model. Fine-tuning an open-source model is also a viable option. There are excellent resources available, such as the [Llama Fine-Tuning Guide](https://www.llama.com/docs/how-to-guides/fine-tuning/). Additionally, there are many techniques ([IBM Fine-Tuning Techniques](https://www.ibm.com/think/topics/fine-tuning)) to make the process more cost-effective and computationally efficient.
+
+## Tool Use

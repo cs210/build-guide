@@ -11,21 +11,12 @@
  Extending LLMs
  &lt;a class="anchor" href="#extending-llms">#&lt;/a>
 &lt;/h1>
-&lt;p>Below are some ways to go beyond just LLMs and use your custom data. These include methods such as finetuning, RAG, and even searching over tabular data.&lt;/p>
-&lt;h2 id="rag">
- RAG
- &lt;a class="anchor" href="#rag">#&lt;/a>
+&lt;p>Below are some ways to go beyond just LLMs and use your custom data. These include methods such as Retrieval Augmented Generation (RAG), finetuning, and even searching over tabular data.&lt;/p>
+&lt;h2 id="retrieval-augmented-generation">
+ Retrieval Augmented Generation
+ &lt;a class="anchor" href="#retrieval-augmented-generation">#&lt;/a>
 &lt;/h2>
-&lt;ul>
-&lt;li>Language models: pretrained on lots of data, but you might need more updated data, or data specific to your use case/liaison&lt;/li>
-&lt;li>Oftentimes, will want to extend large language models with external knowledge bases.&lt;/li>
-&lt;li>This is where RAG comes in. RAG involves two part: a retrieval system where you can find relevant items or context, and a part where you use that to improve model output (typically by prompting)&lt;/li>
-&lt;/ul>
-&lt;h3 id="example">
- Example
- &lt;a class="anchor" href="#example">#&lt;/a>
-&lt;/h3>
-&lt;p>Regarding the knowledge base, you will often use some sort of embedding model &amp;ndash; which can encode information into a lower dimensional space &amp;ndash; and a vector database &amp;ndash; which can help perform similarity search across that same dimension space. A popular example here is &lt;code>chroma&lt;/code>, but there are several others that might be available (Pinecone, &lt;code>pgvector&lt;/code>, etc.). A simple code example is below, and there are several more great tutorials out there:&lt;/p></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
+&lt;p>Language models are typically pretrained on vast amounts of data, but they may require updated information or data tailored to a specific use case. Retraining a language model on a large amount of data might prove to be expensive. In many scenarios, extending large language models with external knowledge bases becomes essential to provide relevant and accurate outputs. This is where &lt;strong>Retrieval-Augmented Generation (RAG)&lt;/strong> comes into play. RAG consists of two key components: a retrieval system to identify relevant items or contextual information and a mechanism to integrate that information into the model&amp;rsquo;s output, often through prompting.&lt;/p></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
  General Advice
  &lt;a class="anchor" href="#general-advice">#&lt;/a>
 &lt;/h1>
