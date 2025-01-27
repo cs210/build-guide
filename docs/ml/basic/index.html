@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-us" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="
+<!doctype html><html lang=en-us dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
   Basic ML
   #
 
@@ -12,481 +7,78 @@ Below are some snippets for common ML use cases such as NLP &ndash; namely, LLMs
   Large Language Models (LLMs)
   #
 
-For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the OpenAI API to make a call to a language model:">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://cs210.github.io/docs/ml/basic/">
-  <meta property="og:site_name" content="CS 210 Build Guide">
-  <meta property="og:title" content="Basic ML">
-  <meta property="og:description" content="Basic ML # Below are some snippets for common ML use cases such as NLP – namely, LLMs – computer vision, and even standard statistical ML.
-Large Language Models (LLMs) # For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the OpenAI API to make a call to a language model:">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
-    <meta property="article:published_time" content="2025-01-08T10:55:07-08:00">
-    <meta property="article:modified_time" content="2025-01-08T10:55:07-08:00">
-<title>Basic ML | CS 210 Build Guide</title>
-<link rel="icon" href="../../../favicon.png" >
-<link rel="manifest" href="../../../manifest.json">
-<link rel="canonical" href="https://cs210.github.io/docs/ml/basic/">
-<link rel="stylesheet" href="../../../book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
-  <script defer src="../../../fuse.min.js"></script>
-  <script defer src="../../../en.search.min.391ed2c396ba5346081b6a46b23891357a80c363dd9e1ca9a6f29e8f053e9c97.js" integrity="sha256-OR7Sw5a6U0YIG2pGsjiRNXqAw2PdnhyppvKejwU&#43;nJc=" crossorigin="anonymous"></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a class="flex align-center" href="../../../"><span>CS 210 Build Guide</span>
-  </a>
-</h2>
-
-
-<div class="book-search hidden">
-  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-<script>document.querySelector(".book-search").classList.remove("hidden")</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="../../../docs/class-resources/" class="">Class Resources</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <span>Web</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="../../../docs/web/starthere/" class="">Start Here</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="../../../docs/web/frontendessentials/" class="">Frontend Essentials</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="../../../docs/web/databases/" class="">Databases</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <span>ML Engineering</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="../../../docs/ml/extending-llms/" class="">Extending LLMs</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="../../../docs/ml/general-advice/" class="">General Advice</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="../../../docs/ml/basic/" class="active">Basic ML</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <span>AR/VR</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="../../../docs/vr/getting-started-in-vr/" class="">Getting Started in VR</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <span>Mobile</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="../../../docs/mobile/mobilebasics/" class="">Mobile Basics</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="../../../svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <h3>Basic ML</h3>
-
-  <label for="toc-control">
-    
-    <img src="../../../svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#large-language-models-llms">Large Language Models (LLMs)</a></li>
-    <li><a href="#computer-vision">Computer Vision</a></li>
-    <li><a href="#statistical-ml">Statistical ML</a></li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown book-article"><h1 id="basic-ml">
-  Basic ML
-  <a class="anchor" href="#basic-ml">#</a>
-</h1>
-<p>Below are some snippets for common ML use cases such as NLP &ndash; namely, LLMs &ndash; computer vision, and even standard statistical ML.</p>
-<h2 id="large-language-models-llms">
-  Large Language Models (LLMs)
-  <a class="anchor" href="#large-language-models-llms">#</a>
-</h2>
-<p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the <a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API</a> to make a call to a language model:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python3" data-lang="python3"><span style="display:flex;"><span><span style="color:#f92672">from</span> openai <span style="color:#f92672">import</span> OpenAI
-</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> OpenAI()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>completion <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>chat<span style="color:#f92672">.</span>completions<span style="color:#f92672">.</span>create(
-</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gpt-4o-mini&#34;</span>,
-</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>[
-</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;system&#34;</span>, <span style="color:#e6db74">&#34;content&#34;</span>: <span style="color:#e6db74">&#34;You are a helpful assistant.&#34;</span>},
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;content&#34;</span>: <span style="color:#e6db74">&#34;Write a haiku about recursion in programming.&#34;</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    ]
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(completion<span style="color:#f92672">.</span>choices[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>message)
-</span></span></code></pre></div><p>As you continue to iterate, you may want to leverage the power of open-source models. For this, Hugging Face &ndash; in particular, the <a href="https://huggingface.co/sentence-transformers">SentenceTransformers</a> module &ndash; will be your best friend. Just specify your language model and you&rsquo;ll be good to go:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python3" data-lang="python3"><span style="display:flex;"><span><span style="color:#f92672">from</span> sentence_transformers <span style="color:#f92672">import</span> SentenceTransformer
-</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> SentenceTransformer(<span style="color:#e6db74">&#39;paraphrase-MiniLM-L6-v2&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sentences we want to encode. Example:</span>
-</span></span><span style="display:flex;"><span>sentence <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;This framework generates embeddings for each input sentence&#39;</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sentences are encoded by calling model.encode()</span>
-</span></span><span style="display:flex;"><span>embedding <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>encode(sentence)
-</span></span></code></pre></div><p>Of course, utilizing an open-source model will also mean figuring out how to serve the model. There are a plethora of tools for this, including <a href="https://modal.com/">Modal</a>, <a href="https://www.baseten.co/">Baseten</a>, <a href="https://www.together.ai/">Together AI</a>, and many others.</p>
-<h2 id="computer-vision">
-  Computer Vision
-  <a class="anchor" href="#computer-vision">#</a>
-</h2>
-<p>Similar to LLMs, there are several Vision APIs available that can be used for quick experimentation. All of the larger cloud platforms have existing offerings &ndash; namely <a href="https://cloud.google.com/vision/docs">GCP</a> and <a href="https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/">Azure</a> &ndash; but it&rsquo;s also important to note that many of the SOTA models are already multimodal. For instance, <a href="https://platform.openai.com/docs/guides/vision?lang=node">GPT-4V</a> already has strong vision capabilities:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python3" data-lang="python3"><span style="display:flex;"><span><span style="color:#f92672">from</span> openai <span style="color:#f92672">import</span> OpenAI
-</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> OpenAI()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>chat<span style="color:#f92672">.</span>completions<span style="color:#f92672">.</span>create(
-</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gpt-4o-mini&#34;</span>,
-</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>[
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;content&#34;</span>: [
-</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;What&#39;s in this image?&#34;</span>},
-</span></span><span style="display:flex;"><span>                {
-</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;image_url&#34;</span>,
-</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;image_url&#34;</span>: {
-</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&#34;</span>,
-</span></span><span style="display:flex;"><span>                    },
-</span></span><span style="display:flex;"><span>                },
-</span></span><span style="display:flex;"><span>            ],
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    max_tokens<span style="color:#f92672">=</span><span style="color:#ae81ff">300</span>,
-</span></span><span style="display:flex;"><span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(response<span style="color:#f92672">.</span>choices[<span style="color:#ae81ff">0</span>])
-</span></span></code></pre></div><p>For using custom models, <a href="https://pytorch.org/vision/stable/index.html#module-torchvision"><code>torchvision</code></a> &ndash; and PyTorch more broadly &ndash; are quite helpful. These packages allow us to both build our own models from scratch as well as use existing large pre-trained models. we can both An often common use case is to take a pre-trained image classification or segmentation model and further finetuning it for a specific task. This is also known as transfer learning, and there are several <a href="https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html">tutorials</a> out there for the task.</p>
-<h2 id="statistical-ml">
-  Statistical ML
-  <a class="anchor" href="#statistical-ml">#</a>
-</h2>
-<p>Finally, for simple problems, statistical techniques may be sufficient. <code>sklearn</code> is often what&rsquo;s used in industry for these tasks, and it can support tasks ranging from nearest neighbors clustering to gradient boosting. Here&rsquo;s an example of using <code>sklearn</code> for linear regression:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python3" data-lang="python3"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LinearRegression
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create some sample data</span>
-</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">1</span>], [<span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">4</span>], [<span style="color:#ae81ff">5</span>]])  <span style="color:#75715e"># Features</span>
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>])  <span style="color:#75715e"># Target values</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create and fit the model</span>
-</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> LinearRegression()
-</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>fit(X, y)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Make predictions</span>
-</span></span><span style="display:flex;"><span>predictions <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>predict(X)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get model coefficients and intercept</span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Slope: </span><span style="color:#e6db74">{</span>model<span style="color:#f92672">.</span>coef_[<span style="color:#ae81ff">0</span>]<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Intercept: </span><span style="color:#e6db74">{</span>model<span style="color:#f92672">.</span>intercept_<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calculate R-squared score</span>
-</span></span><span style="display:flex;"><span>r_squared <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>score(X, y)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;R-squared: </span><span style="color:#e6db74">{</span>r_squared<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span></code></pre></div></article>
- 
-      
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
-</div>
-
-
-
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#large-language-models-llms">Large Language Models (LLMs)</a></li>
-    <li><a href="#computer-vision">Computer Vision</a></li>
-    <li><a href="#statistical-ml">Statistical ML</a></li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
-    
-  </main>
-
-  
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the OpenAI API to make a call to a language model:"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/docs/ml/basic/"><meta property="og:site_name" content="CS 210 Build Guide"><meta property="og:title" content="Basic ML"><meta property="og:description" content="Basic ML # Below are some snippets for common ML use cases such as NLP – namely, LLMs – computer vision, and even standard statistical ML.
+Large Language Models (LLMs) # For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the OpenAI API to make a call to a language model:"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:published_time" content="2025-01-08T10:55:07-08:00"><meta property="article:modified_time" content="2025-01-08T10:55:07-08:00"><title>Basic ML | CS 210 Build Guide</title>
+<link rel=icon href=../../../favicon.png><link rel=manifest href=../../../manifest.json><link rel=canonical href=http://localhost:1313/docs/ml/basic/><link rel=stylesheet href=../../../book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin=anonymous><script defer src=../../../fuse.min.js></script><script defer src=../../../en.search.min.391ed2c396ba5346081b6a46b23891357a80c363dd9e1ca9a6f29e8f053e9c97.js integrity="sha256-OR7Sw5a6U0YIG2pGsjiRNXqAw2PdnhyppvKejwU+nJc=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=../../../><span>CS 210 Build Guide</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=../../../docs/class-resources/>Class Resources</a></li><li><span>Web</span><ul><li><a href=../../../docs/web/starthere/>Start Here</a></li><li><a href=../../../docs/web/frontendessentials/>Frontend Essentials</a></li><li><a href=../../../docs/web/databases/>Databases</a></li></ul></li><li><span>ML Engineering</span><ul><li><a href=../../../docs/ml/extending-llms/>Extending LLMs</a></li><li><a href=../../../docs/ml/general-advice/>General Advice</a></li><li><a href=../../../docs/ml/basic/ class=active>Basic ML</a></li></ul></li><li><span>AR/VR</span><ul><li><a href=../../../docs/vr/getting-started-in-vr/>Getting Started in VR</a></li></ul></li><li><span>Mobile</span><ul><li><a href=../../../docs/mobile/mobilebasics/>Mobile Basics</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=../../../svg/menu.svg class=book-icon alt=Menu></label><h3>Basic ML</h3><label for=toc-control><img src=../../../svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#large-language-models-llms>Large Language Models (LLMs)</a></li><li><a href=#computer-vision>Computer Vision</a></li><li><a href=#statistical-ml>Statistical ML</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=basic-ml>Basic ML
+<a class=anchor href=#basic-ml>#</a></h1><p>Below are some snippets for common ML use cases such as NLP &ndash; namely, LLMs &ndash; computer vision, and even standard statistical ML.</p><h2 id=large-language-models-llms>Large Language Models (LLMs)
+<a class=anchor href=#large-language-models-llms>#</a></h2><p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the <a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API</a> to make a call to a language model:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python3 data-lang=python3><span style=display:flex><span><span style=color:#f92672>from</span> openai <span style=color:#f92672>import</span> OpenAI
+</span></span><span style=display:flex><span>client <span style=color:#f92672>=</span> OpenAI()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>completion <span style=color:#f92672>=</span> client<span style=color:#f92672>.</span>chat<span style=color:#f92672>.</span>completions<span style=color:#f92672>.</span>create(
+</span></span><span style=display:flex><span>    model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gpt-4o-mini&#34;</span>,
+</span></span><span style=display:flex><span>    messages<span style=color:#f92672>=</span>[
+</span></span><span style=display:flex><span>        {<span style=color:#e6db74>&#34;role&#34;</span>: <span style=color:#e6db74>&#34;system&#34;</span>, <span style=color:#e6db74>&#34;content&#34;</span>: <span style=color:#e6db74>&#34;You are a helpful assistant.&#34;</span>},
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;role&#34;</span>: <span style=color:#e6db74>&#34;user&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;content&#34;</span>: <span style=color:#e6db74>&#34;Write a haiku about recursion in programming.&#34;</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    ]
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(completion<span style=color:#f92672>.</span>choices[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>message)
+</span></span></code></pre></div><p>As you continue to iterate, you may want to leverage the power of open-source models. For this, Hugging Face &ndash; in particular, the <a href=https://huggingface.co/sentence-transformers>SentenceTransformers</a> module &ndash; will be your best friend. Just specify your language model and you&rsquo;ll be good to go:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python3 data-lang=python3><span style=display:flex><span><span style=color:#f92672>from</span> sentence_transformers <span style=color:#f92672>import</span> SentenceTransformer
+</span></span><span style=display:flex><span>model <span style=color:#f92672>=</span> SentenceTransformer(<span style=color:#e6db74>&#39;paraphrase-MiniLM-L6-v2&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Sentences we want to encode. Example:</span>
+</span></span><span style=display:flex><span>sentence <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#39;This framework generates embeddings for each input sentence&#39;</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Sentences are encoded by calling model.encode()</span>
+</span></span><span style=display:flex><span>embedding <span style=color:#f92672>=</span> model<span style=color:#f92672>.</span>encode(sentence)
+</span></span></code></pre></div><p>Of course, utilizing an open-source model will also mean figuring out how to serve the model. There are a plethora of tools for this, including <a href=https://modal.com/>Modal</a>, <a href=https://www.baseten.co/>Baseten</a>, <a href=https://www.together.ai/>Together AI</a>, and many others.</p><h2 id=computer-vision>Computer Vision
+<a class=anchor href=#computer-vision>#</a></h2><p>Similar to LLMs, there are several Vision APIs available that can be used for quick experimentation. All of the larger cloud platforms have existing offerings &ndash; namely <a href=https://cloud.google.com/vision/docs>GCP</a> and <a href=https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/>Azure</a> &ndash; but it&rsquo;s also important to note that many of the SOTA models are already multimodal. For instance, <a href="https://platform.openai.com/docs/guides/vision?lang=node">GPT-4V</a> already has strong vision capabilities:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python3 data-lang=python3><span style=display:flex><span><span style=color:#f92672>from</span> openai <span style=color:#f92672>import</span> OpenAI
+</span></span><span style=display:flex><span>client <span style=color:#f92672>=</span> OpenAI()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>response <span style=color:#f92672>=</span> client<span style=color:#f92672>.</span>chat<span style=color:#f92672>.</span>completions<span style=color:#f92672>.</span>create(
+</span></span><span style=display:flex><span>    model<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gpt-4o-mini&#34;</span>,
+</span></span><span style=display:flex><span>    messages<span style=color:#f92672>=</span>[
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;role&#34;</span>: <span style=color:#e6db74>&#34;user&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;content&#34;</span>: [
+</span></span><span style=display:flex><span>                {<span style=color:#e6db74>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;text&#34;</span>, <span style=color:#e6db74>&#34;text&#34;</span>: <span style=color:#e6db74>&#34;What&#39;s in this image?&#34;</span>},
+</span></span><span style=display:flex><span>                {
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;image_url&#34;</span>,
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;image_url&#34;</span>: {
+</span></span><span style=display:flex><span>                        <span style=color:#e6db74>&#34;url&#34;</span>: <span style=color:#e6db74>&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg&#34;</span>,
+</span></span><span style=display:flex><span>                    },
+</span></span><span style=display:flex><span>                },
+</span></span><span style=display:flex><span>            ],
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    ],
+</span></span><span style=display:flex><span>    max_tokens<span style=color:#f92672>=</span><span style=color:#ae81ff>300</span>,
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(response<span style=color:#f92672>.</span>choices[<span style=color:#ae81ff>0</span>])
+</span></span></code></pre></div><p>For using custom models, <a href=https://pytorch.org/vision/stable/index.html#module-torchvision><code>torchvision</code></a> &ndash; and PyTorch more broadly &ndash; are quite helpful. These packages allow us to both build our own models from scratch as well as use existing large pre-trained models. we can both An often common use case is to take a pre-trained image classification or segmentation model and further finetuning it for a specific task. This is also known as transfer learning, and there are several <a href=https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html>tutorials</a> out there for the task.</p><h2 id=statistical-ml>Statistical ML
+<a class=anchor href=#statistical-ml>#</a></h2><p>Finally, for simple problems, statistical techniques may be sufficient. <code>sklearn</code> is often what&rsquo;s used in industry for these tasks, and it can support tasks ranging from nearest neighbors clustering to gradient boosting. Here&rsquo;s an example of using <code>sklearn</code> for linear regression:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python3 data-lang=python3><span style=display:flex><span><span style=color:#f92672>from</span> sklearn.linear_model <span style=color:#f92672>import</span> LinearRegression
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> numpy <span style=color:#66d9ef>as</span> np
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Create some sample data</span>
+</span></span><span style=display:flex><span>X <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>array([[<span style=color:#ae81ff>1</span>], [<span style=color:#ae81ff>2</span>], [<span style=color:#ae81ff>3</span>], [<span style=color:#ae81ff>4</span>], [<span style=color:#ae81ff>5</span>]])  <span style=color:#75715e># Features</span>
+</span></span><span style=display:flex><span>y <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>array([<span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>5</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>5</span>])  <span style=color:#75715e># Target values</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Create and fit the model</span>
+</span></span><span style=display:flex><span>model <span style=color:#f92672>=</span> LinearRegression()
+</span></span><span style=display:flex><span>model<span style=color:#f92672>.</span>fit(X, y)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Make predictions</span>
+</span></span><span style=display:flex><span>predictions <span style=color:#f92672>=</span> model<span style=color:#f92672>.</span>predict(X)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Get model coefficients and intercept</span>
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Slope: </span><span style=color:#e6db74>{</span>model<span style=color:#f92672>.</span>coef_[<span style=color:#ae81ff>0</span>]<span style=color:#e6db74>:</span><span style=color:#e6db74>.2f</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Intercept: </span><span style=color:#e6db74>{</span>model<span style=color:#f92672>.</span>intercept_<span style=color:#e6db74>:</span><span style=color:#e6db74>.2f</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Calculate R-squared score</span>
+</span></span><span style=display:flex><span>r_squared <span style=color:#f92672>=</span> model<span style=color:#f92672>.</span>score(X, y)
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;R-squared: </span><span style=color:#e6db74>{</span>r_squared<span style=color:#e6db74>:</span><span style=color:#e6db74>.2f</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span></code></pre></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#large-language-models-llms>Large Language Models (LLMs)</a></li><li><a href=#computer-vision>Computer Vision</a></li><li><a href=#statistical-ml>Statistical ML</a></li></ul></nav></div></aside></main></body></html>
