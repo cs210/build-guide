@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cs210.github.io/docs/mobile/mobilebasics/</loc>
+    <loc>https://cs210.github.io/docs/web/basic-website-setup/</loc>
     <lastmod>2025-01-25T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://cs210.github.io/docs/web/start-here/</loc>
+    <loc>https://cs210.github.io/docs/mobile/mobile-basics/</loc>
     <lastmod>2025-01-25T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://cs210.github.io/docs/ml/basic/</loc>
+    <loc>https://cs210.github.io/docs/ml/basic-ml/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
     <loc>https://cs210.github.io/docs/class-resources/</loc>

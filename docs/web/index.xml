@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate>
     <atom:link href="https://cs210.github.io/docs/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Start Here</title>
-      <link>https://cs210.github.io/docs/web/start-here/</link>
+      <title>Basic Website Setup</title>
+      <link>https://cs210.github.io/docs/web/basic-website-setup/</link>
       <pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate>
-      <guid>https://cs210.github.io/docs/web/start-here/</guid>
+      <guid>https://cs210.github.io/docs/web/basic-website-setup/</guid>
       <description>&lt;h1 id=&#34;basic-website-setup&#34;&gt;Basic Website Setup&lt;/h1&gt;&#xA;&lt;p&gt;Below is a quick setup guide for building a website with Next.js and Vercel — the perfect infrastructure to add V0 code to!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;project-setup&#34;&gt;Project Setup&lt;/h2&gt;&#xA;&lt;p&gt;First, check if you have Node installed. If not, download &lt;a href=&#34;https://nodejs.org/en&#34;&gt;Node&lt;/a&gt;:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;node -v&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next, create a new web project. The following command includes presets that integrate well with V0 code:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npx create-next-app@latest project-name --typescript --eslint --tailwind --app --src-dir --import-alias &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@/*&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Say no to Turbopack.&lt;/p&gt;</description>
     </item>
     <item>
