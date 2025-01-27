@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:64957/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:64957/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic ML</title><link>http://localhost:64957/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:64957/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:54415/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:54415/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic ML</title><link>http://localhost:54415/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
  Basic ML
  &lt;a class="anchor" href="#basic-ml">#&lt;/a>
 &lt;/h1>
@@ -7,7 +7,7 @@
  Large Language Models (LLMs)
  &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
 &lt;/h2>
-&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Extending LLMs</title><link>http://localhost:64957/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:64957/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Extending LLMs</title><link>http://localhost:54415/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
  Extending LLMs
  &lt;a class="anchor" href="#extending-llms">#&lt;/a>
 &lt;/h1>
@@ -23,7 +23,7 @@
 &lt;h2 id="tabular-data">
  Tabular Data
  &lt;a class="anchor" href="#tabular-data">#&lt;/a>
-&lt;/h2></description></item><item><title>General Advice</title><link>http://localhost:64957/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:64957/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
+&lt;/h2></description></item><item><title>General Advice</title><link>http://localhost:54415/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
  General Advice
  &lt;a class="anchor" href="#general-advice">#&lt;/a>
 &lt;/h1>
