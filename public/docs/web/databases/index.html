@@ -1,4 +1,9 @@
-<!doctype html><html lang=en-us dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
   Databases
   #
 
@@ -37,7 +42,7 @@ Native JSON support
 
 Sign up here
 Create project
-Get connection string from: Settings -> Database
+Get connection string from: Settings -&gt; Database
 
 
   MongoDB Atlas
@@ -46,102 +51,611 @@ Get connection string from: Settings -> Database
 
 Sign up here
 Create cluster (M0 Free tier)
-Get connection string from: Connect -> Connect your application
+Get connection string from: Connect -&gt; Connect your application
 
 
 
   Adding Prisma to Your Next.js Project
   #
 
-Prisma makes working with databases in Next.js efficient and type-safe. Follow these steps:"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/docs/web/databases/"><meta property="og:site_name" content="CS 210 Build Guide"><meta property="og:title" content="CS 210 Build Guide"><meta property="og:description" content="Databases # Most modern web applications often require a database to store and manage data. This guide will lead you through setting up a database for a Next.js project, using hosted database services, and performing basic CRUD (Create, Read, Update, Delete) operations with Prisma, a popular ORM (Object Relational Mapper).
-Choosing a Database # SQL (PostgreSQL via Supabase) # Choose when you need: Data relationships, ACID compliance, complex queries Free tier available, excellent documentation Built-in row-level security and authentication NoSQL (MongoDB Atlas) # Choose when you need: Flexible schema, high write throughput, horizontal scaling Free tier available, great for prototypes Native JSON support Setup Guide for Hosted Databases # PostgreSQL via Supabase # Sign up here Create project Get connection string from: Settings -> Database MongoDB Atlas # Sign up here Create cluster (M0 Free tier) Get connection string from: Connect -> Connect your application Adding Prisma to Your Next.js Project # Prisma makes working with databases in Next.js efficient and type-safe. Follow these steps:"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Databases | CS 210 Build Guide</title>
-<link rel=icon href=../../../favicon.png><link rel=manifest href=../../../manifest.json><link rel=canonical href=http://localhost:1313/docs/web/databases/><link rel=stylesheet href=../../../book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin=anonymous><script defer src=../../../fuse.min.js></script><script defer src=../../../en.search.min.c78a176235cfce4a824800becd4525dfd185a54c10ff1999228af74a5d0f6ee8.js integrity="sha256-x4oXYjXPzkqCSAC+zUUl39GFpUwQ/xmZIor3Sl0Pbug=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=../../../><span>CS 210 Build Guide</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><span>Mobile</span><ul><li><a href=../../../docs/mobile/mobilebasics/>Mobile Basics</a></li></ul></li><li><span>Web</span><ul><li><a href=../../../docs/web/frontendessentials/>Frontend Essentials</a></li><li><a href=../../../docs/web/starthere/>Start Here</a></li><li><a href=../../../docs/web/databases/ class=active>Databases</a></li></ul></li><li><span>AR/VR</span><ul><li><a href=../../../docs/vr/getting-started-in-vr/>Getting Started in VR</a></li></ul></li><li><a href=../../../docs/class-resources/>Class Resources</a></li><li><span>ML Engineering</span><ul><li><a href=../../../docs/ml/basic/>Basic ML</a></li><li><a href=../../../docs/ml/extending-llms/>Extending LLMs</a></li><li><a href=../../../docs/ml/general-advice/>General Advice</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=../../../svg/menu.svg class=book-icon alt=Menu></label><h3>Databases</h3><label for=toc-control><img src=../../../svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#choosing-a-database>Choosing a Database</a><ul><li><a href=#sql-postgresql-via-supabase>SQL (PostgreSQL via Supabase)</a></li><li><a href=#nosql-mongodb-atlas>NoSQL (MongoDB Atlas)</a></li></ul></li><li><a href=#setup-guide-for-hosted-databases>Setup Guide for Hosted Databases</a><ul><li><a href=#postgresql-via-supabase>PostgreSQL via Supabase</a></li><li><a href=#mongodb-atlas>MongoDB Atlas</a></li></ul></li><li><a href=#adding-prisma-to-your-nextjs-project>Adding Prisma to Your Next.js Project</a></li><li><a href=#crud-operations-in-nextjs>CRUD Operations in Next.js</a><ul><li></li></ul></li><li><a href=#environment-variables>Environment Variables</a></li><li><a href=#performance-tips>Performance Tips</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=databases>Databases
-<a class=anchor href=#databases>#</a></h1><p>Most modern web applications often require a database to store and manage data. This guide will lead you through setting up a database for a Next.js project, using hosted database services, and performing basic CRUD (Create, Read, Update, Delete) operations with Prisma, a popular ORM (Object Relational Mapper).</p><hr><h2 id=choosing-a-database>Choosing a Database
-<a class=anchor href=#choosing-a-database>#</a></h2><h3 id=sql-postgresql-via-supabase>SQL (PostgreSQL via Supabase)
-<a class=anchor href=#sql-postgresql-via-supabase>#</a></h3><ul><li>Choose when you need: Data relationships, ACID compliance, complex queries</li><li>Free tier available, excellent documentation</li><li>Built-in row-level security and authentication</li></ul><h3 id=nosql-mongodb-atlas>NoSQL (MongoDB Atlas)
-<a class=anchor href=#nosql-mongodb-atlas>#</a></h3><ul><li>Choose when you need: Flexible schema, high write throughput, horizontal scaling</li><li>Free tier available, great for prototypes</li><li>Native JSON support</li></ul><h2 id=setup-guide-for-hosted-databases>Setup Guide for Hosted Databases
-<a class=anchor href=#setup-guide-for-hosted-databases>#</a></h2><h3 id=postgresql-via-supabase>PostgreSQL via Supabase
-<a class=anchor href=#postgresql-via-supabase>#</a></h3><ol><li>Sign up <a href=https://supabase.com>here</a></li><li>Create project</li><li>Get connection string from: Settings -> Database</li></ol><h3 id=mongodb-atlas>MongoDB Atlas
-<a class=anchor href=#mongodb-atlas>#</a></h3><ol><li>Sign up <a href=https://mongodb.com/atlas>here</a></li><li>Create cluster (M0 Free tier)</li><li>Get connection string from: Connect -> Connect your application</li></ol><hr><h2 id=adding-prisma-to-your-nextjs-project>Adding Prisma to Your Next.js Project
-<a class=anchor href=#adding-prisma-to-your-nextjs-project>#</a></h2><p>Prisma makes working with databases in Next.js efficient and type-safe. Follow these steps:</p><p>Install Prisma by running the following commands in your project:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>npm install prisma --save-dev
-</span></span><span style=display:flex><span>npm install @prisma/client
-</span></span></code></pre></div><p>Initialize Prisma</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>npx prisma init
-</span></span></code></pre></div><p>This creates a <code>prisma/</code> directory with a <code>schema.prisma</code> file.</p><p>Update the <code>schema.prisma</code> file by replacing the <code>datasource</code> block with your connection string. For example:</p><pre tabindex=0><code>datasource db {
+Prisma makes working with databases in Next.js efficient and type-safe. Follow these steps:">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://cs210.github.io/docs/web/databases/">
+  <meta property="og:site_name" content="CS 210 Build Guide">
+  <meta property="og:title" content="CS 210 Build Guide">
+  <meta property="og:description" content="Databases # Most modern web applications often require a database to store and manage data. This guide will lead you through setting up a database for a Next.js project, using hosted database services, and performing basic CRUD (Create, Read, Update, Delete) operations with Prisma, a popular ORM (Object Relational Mapper).
+Choosing a Database # SQL (PostgreSQL via Supabase) # Choose when you need: Data relationships, ACID compliance, complex queries Free tier available, excellent documentation Built-in row-level security and authentication NoSQL (MongoDB Atlas) # Choose when you need: Flexible schema, high write throughput, horizontal scaling Free tier available, great for prototypes Native JSON support Setup Guide for Hosted Databases # PostgreSQL via Supabase # Sign up here Create project Get connection string from: Settings -&gt; Database MongoDB Atlas # Sign up here Create cluster (M0 Free tier) Get connection string from: Connect -&gt; Connect your application Adding Prisma to Your Next.js Project # Prisma makes working with databases in Next.js efficient and type-safe. Follow these steps:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Databases | CS 210 Build Guide</title>
+<link rel="icon" href="../../../favicon.png" >
+<link rel="manifest" href="../../../manifest.json">
+<link rel="canonical" href="https://cs210.github.io/docs/web/databases/">
+<link rel="stylesheet" href="../../../book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="../../../fuse.min.js"></script>
+  <script defer src="../../../en.search.min.9ab27f875ccecbfaacb42c18e6ea44063617f0bc41740ec709d3252028e9f9fb.js" integrity="sha256-mrJ/h1zOy/qstCwY5upEBjYX8LxBdA7HCdMlICjp&#43;fs=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="../../../"><span>CS 210 Build Guide</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Mobile</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/mobile/mobilebasics/" class="">Mobile Basics</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Web</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/web/frontendessentials/" class="">Frontend Essentials</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/web/starthere/" class="">Start Here</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/web/databases/" class="active">Databases</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>AR/VR</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/vr/getting-started-in-vr/" class="">Getting Started in VR</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/class-resources/" class="">Class Resources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>ML Engineering</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/ml/basic/" class="">Basic ML</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/ml/extending-llms/" class="">Extending LLMs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/ml/general-advice/" class="">General Advice</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Databases</h3>
+
+  <label for="toc-control">
+    
+    <img src="../../../svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#choosing-a-database">Choosing a Database</a>
+      <ul>
+        <li><a href="#sql-postgresql-via-supabase">SQL (PostgreSQL via Supabase)</a></li>
+        <li><a href="#nosql-mongodb-atlas">NoSQL (MongoDB Atlas)</a></li>
+      </ul>
+    </li>
+    <li><a href="#setup-guide-for-hosted-databases">Setup Guide for Hosted Databases</a>
+      <ul>
+        <li><a href="#postgresql-via-supabase">PostgreSQL via Supabase</a></li>
+        <li><a href="#mongodb-atlas">MongoDB Atlas</a></li>
+      </ul>
+    </li>
+    <li><a href="#adding-prisma-to-your-nextjs-project">Adding Prisma to Your Next.js Project</a></li>
+    <li><a href="#crud-operations-in-nextjs">CRUD Operations in Next.js</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#environment-variables">Environment Variables</a></li>
+    <li><a href="#performance-tips">Performance Tips</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="databases">
+  Databases
+  <a class="anchor" href="#databases">#</a>
+</h1>
+<p>Most modern web applications often require a database to store and manage data. This guide will lead you through setting up a database for a Next.js project, using hosted database services, and performing basic CRUD (Create, Read, Update, Delete) operations with Prisma, a popular ORM (Object Relational Mapper).</p>
+<hr>
+<h2 id="choosing-a-database">
+  Choosing a Database
+  <a class="anchor" href="#choosing-a-database">#</a>
+</h2>
+<h3 id="sql-postgresql-via-supabase">
+  SQL (PostgreSQL via Supabase)
+  <a class="anchor" href="#sql-postgresql-via-supabase">#</a>
+</h3>
+<ul>
+<li>Choose when you need: Data relationships, ACID compliance, complex queries</li>
+<li>Free tier available, excellent documentation</li>
+<li>Built-in row-level security and authentication</li>
+</ul>
+<h3 id="nosql-mongodb-atlas">
+  NoSQL (MongoDB Atlas)
+  <a class="anchor" href="#nosql-mongodb-atlas">#</a>
+</h3>
+<ul>
+<li>Choose when you need: Flexible schema, high write throughput, horizontal scaling</li>
+<li>Free tier available, great for prototypes</li>
+<li>Native JSON support</li>
+</ul>
+<h2 id="setup-guide-for-hosted-databases">
+  Setup Guide for Hosted Databases
+  <a class="anchor" href="#setup-guide-for-hosted-databases">#</a>
+</h2>
+<h3 id="postgresql-via-supabase">
+  PostgreSQL via Supabase
+  <a class="anchor" href="#postgresql-via-supabase">#</a>
+</h3>
+<ol>
+<li>Sign up <a href="https://supabase.com">here</a></li>
+<li>Create project</li>
+<li>Get connection string from: Settings -&gt; Database</li>
+</ol>
+<h3 id="mongodb-atlas">
+  MongoDB Atlas
+  <a class="anchor" href="#mongodb-atlas">#</a>
+</h3>
+<ol>
+<li>Sign up <a href="https://mongodb.com/atlas">here</a></li>
+<li>Create cluster (M0 Free tier)</li>
+<li>Get connection string from: Connect -&gt; Connect your application</li>
+</ol>
+<hr>
+<h2 id="adding-prisma-to-your-nextjs-project">
+  Adding Prisma to Your Next.js Project
+  <a class="anchor" href="#adding-prisma-to-your-nextjs-project">#</a>
+</h2>
+<p>Prisma makes working with databases in Next.js efficient and type-safe. Follow these steps:</p>
+<p>Install Prisma by running the following commands in your project:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install prisma --save-dev
+</span></span><span style="display:flex;"><span>npm install @prisma/client
+</span></span></code></pre></div><p>Initialize Prisma</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx prisma init
+</span></span></code></pre></div><p>This creates a <code>prisma/</code> directory with a <code>schema.prisma</code> file.</p>
+<p>Update the <code>schema.prisma</code> file by replacing the <code>datasource</code> block with your connection string. For example:</p>
+<pre tabindex="0"><code>datasource db {
   provider = &#34;postgresql&#34;  // Change to &#34;mongodb&#34; for MongoDB
   url      = env(&#34;DATABASE_URL&#34;)
 }
-</code></pre><p>Add a simple model:</p><pre tabindex=0><code>model Post {
+</code></pre><p>Add a simple model:</p>
+<pre tabindex="0"><code>model Post {
   id        Int      @id @default(autoincrement())
   title     String
   content   String
   createdAt DateTime @default(now())
 }
-</code></pre><p>Move the model to your database:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>npx prisma migrate dev --name description_of_changes
-</span></span></code></pre></div><p>or for quick prototyping and no version control:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>npx prisma db push 
-</span></span></code></pre></div><p>This creates the <code>Post</code> table in your database.</p><hr><h2 id=crud-operations-in-nextjs>CRUD Operations in Next.js
-<a class=anchor href=#crud-operations-in-nextjs>#</a></h2><p>Here’s how to perform basic CRUD operations using Prisma in API routes:</p><h4 id=a-create-a-post><strong>a. Create a Post</strong>
-<a class=anchor href=#a-create-a-post>#</a></h4><p>Create a new file <code>app/api/posts/create.js</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>PrismaClient</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#34;@prisma/client&#34;</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>prisma</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>PrismaClient</span>();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#66d9ef>async</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>handler</span>(<span style=color:#a6e22e>req</span>, <span style=color:#a6e22e>res</span>) {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>req</span>.<span style=color:#a6e22e>method</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;POST&#34;</span>) {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> { <span style=color:#a6e22e>title</span>, <span style=color:#a6e22e>content</span> } <span style=color:#f92672>=</span> <span style=color:#a6e22e>req</span>.<span style=color:#a6e22e>body</span>;
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>post</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>prisma</span>.<span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>create</span>({
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>data</span><span style=color:#f92672>:</span> {
-</span></span><span style=display:flex><span>        <span style=color:#a6e22e>title</span>,
-</span></span><span style=display:flex><span>        <span style=color:#a6e22e>content</span>,
-</span></span><span style=display:flex><span>      },
-</span></span><span style=display:flex><span>    });
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>status</span>(<span style=color:#ae81ff>200</span>).<span style=color:#a6e22e>json</span>(<span style=color:#a6e22e>post</span>);
-</span></span><span style=display:flex><span>  } <span style=color:#66d9ef>else</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>status</span>(<span style=color:#ae81ff>405</span>).<span style=color:#a6e22e>json</span>({ <span style=color:#a6e22e>message</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Method not allowed&#34;</span> });
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><h4 id=b-read-posts><strong>b. Read Posts</strong>
-<a class=anchor href=#b-read-posts>#</a></h4><p>Create a new file <code>app/api/posts/index.js</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>PrismaClient</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#34;@prisma/client&#34;</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>prisma</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>PrismaClient</span>();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#66d9ef>async</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>handler</span>(<span style=color:#a6e22e>req</span>, <span style=color:#a6e22e>res</span>) {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>req</span>.<span style=color:#a6e22e>method</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;GET&#34;</span>) {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>posts</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>prisma</span>.<span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>findMany</span>();
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>status</span>(<span style=color:#ae81ff>200</span>).<span style=color:#a6e22e>json</span>(<span style=color:#a6e22e>posts</span>);
-</span></span><span style=display:flex><span>  } <span style=color:#66d9ef>else</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>status</span>(<span style=color:#ae81ff>405</span>).<span style=color:#a6e22e>json</span>({ <span style=color:#a6e22e>message</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Method not allowed&#34;</span> });
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><h4 id=c-update-a-post><strong>c. Update a Post</strong>
-<a class=anchor href=#c-update-a-post>#</a></h4><p>Create a new file <code>app/api/posts/update.js</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>PrismaClient</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#34;@prisma/client&#34;</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>prisma</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>PrismaClient</span>();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#66d9ef>async</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>handler</span>(<span style=color:#a6e22e>req</span>, <span style=color:#a6e22e>res</span>) {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>req</span>.<span style=color:#a6e22e>method</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;PUT&#34;</span>) {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> { <span style=color:#a6e22e>id</span>, <span style=color:#a6e22e>title</span>, <span style=color:#a6e22e>content</span> } <span style=color:#f92672>=</span> <span style=color:#a6e22e>req</span>.<span style=color:#a6e22e>body</span>;
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>post</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>prisma</span>.<span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>update</span>({
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>where</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>id</span><span style=color:#f92672>:</span> Number(<span style=color:#a6e22e>id</span>) },
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>data</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>title</span>, <span style=color:#a6e22e>content</span> },
-</span></span><span style=display:flex><span>    });
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>status</span>(<span style=color:#ae81ff>200</span>).<span style=color:#a6e22e>json</span>(<span style=color:#a6e22e>post</span>);
-</span></span><span style=display:flex><span>  } <span style=color:#66d9ef>else</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>status</span>(<span style=color:#ae81ff>405</span>).<span style=color:#a6e22e>json</span>({ <span style=color:#a6e22e>message</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Method not allowed&#34;</span> });
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><h4 id=d-delete-a-post><strong>d. Delete a Post</strong>
-<a class=anchor href=#d-delete-a-post>#</a></h4><p>Create a new file <code>app/api/posts/delete.js</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>PrismaClient</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#34;@prisma/client&#34;</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>prisma</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>PrismaClient</span>();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#66d9ef>async</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>handler</span>(<span style=color:#a6e22e>req</span>, <span style=color:#a6e22e>res</span>) {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>req</span>.<span style=color:#a6e22e>method</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#34;DELETE&#34;</span>) {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> { <span style=color:#a6e22e>id</span> } <span style=color:#f92672>=</span> <span style=color:#a6e22e>req</span>.<span style=color:#a6e22e>body</span>;
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>prisma</span>.<span style=color:#a6e22e>post</span>.<span style=color:#66d9ef>delete</span>({
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>where</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>id</span><span style=color:#f92672>:</span> Number(<span style=color:#a6e22e>id</span>) },
-</span></span><span style=display:flex><span>    });
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>status</span>(<span style=color:#ae81ff>200</span>).<span style=color:#a6e22e>json</span>({ <span style=color:#a6e22e>message</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Post deleted&#34;</span> });
-</span></span><span style=display:flex><span>  } <span style=color:#66d9ef>else</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>status</span>(<span style=color:#ae81ff>405</span>).<span style=color:#a6e22e>json</span>({ <span style=color:#a6e22e>message</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Method not allowed&#34;</span> });
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>You have now created RESTful API Endpoints for your database operations!</p><hr><h2 id=environment-variables>Environment Variables
-<a class=anchor href=#environment-variables>#</a></h2><p>Store your database connection string securely in a <code>.env</code> file:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-env data-lang=env><span style=display:flex><span>DATABASE_URL<span style=color:#f92672>=</span>your-database-connection-string
-</span></span></code></pre></div><p>Ensure <code>.env</code> is added to your <code>.gitignore</code> to prevent it from being committed.</p><hr><h2 id=performance-tips>Performance Tips
-<a class=anchor href=#performance-tips>#</a></h2><ul><li>Add indexes for frequently queried fields</li><li>Use <code>select</code> to limit returned fields</li><li>Consider caching for read-heavy operations</li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#choosing-a-database>Choosing a Database</a><ul><li><a href=#sql-postgresql-via-supabase>SQL (PostgreSQL via Supabase)</a></li><li><a href=#nosql-mongodb-atlas>NoSQL (MongoDB Atlas)</a></li></ul></li><li><a href=#setup-guide-for-hosted-databases>Setup Guide for Hosted Databases</a><ul><li><a href=#postgresql-via-supabase>PostgreSQL via Supabase</a></li><li><a href=#mongodb-atlas>MongoDB Atlas</a></li></ul></li><li><a href=#adding-prisma-to-your-nextjs-project>Adding Prisma to Your Next.js Project</a></li><li><a href=#crud-operations-in-nextjs>CRUD Operations in Next.js</a><ul><li></li></ul></li><li><a href=#environment-variables>Environment Variables</a></li><li><a href=#performance-tips>Performance Tips</a></li></ul></nav></div></aside></main></body></html>
+</code></pre><p>Move the model to your database:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx prisma migrate dev --name description_of_changes
+</span></span></code></pre></div><p>or for quick prototyping and no version control:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx prisma db push 
+</span></span></code></pre></div><p>This creates the <code>Post</code> table in your database.</p>
+<hr>
+<h2 id="crud-operations-in-nextjs">
+  CRUD Operations in Next.js
+  <a class="anchor" href="#crud-operations-in-nextjs">#</a>
+</h2>
+<p>Here’s how to perform basic CRUD operations using Prisma in API routes:</p>
+<h4 id="a-create-a-post">
+  <strong>a. Create a Post</strong>
+  <a class="anchor" href="#a-create-a-post">#</a>
+</h4>
+<p>Create a new file <code>app/api/posts/create.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">PrismaClient</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;@prisma/client&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">prisma</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">PrismaClient</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handler</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">method</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;POST&#34;</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">content</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">post</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">prisma</span>.<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">create</span>({
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">title</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">content</span>,
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">200</span>).<span style="color:#a6e22e">json</span>(<span style="color:#a6e22e">post</span>);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">405</span>).<span style="color:#a6e22e">json</span>({ <span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Method not allowed&#34;</span> });
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="b-read-posts">
+  <strong>b. Read Posts</strong>
+  <a class="anchor" href="#b-read-posts">#</a>
+</h4>
+<p>Create a new file <code>app/api/posts/index.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">PrismaClient</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;@prisma/client&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">prisma</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">PrismaClient</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handler</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">method</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;GET&#34;</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">posts</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">prisma</span>.<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">findMany</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">200</span>).<span style="color:#a6e22e">json</span>(<span style="color:#a6e22e">posts</span>);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">405</span>).<span style="color:#a6e22e">json</span>({ <span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Method not allowed&#34;</span> });
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="c-update-a-post">
+  <strong>c. Update a Post</strong>
+  <a class="anchor" href="#c-update-a-post">#</a>
+</h4>
+<p>Create a new file <code>app/api/posts/update.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">PrismaClient</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;@prisma/client&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">prisma</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">PrismaClient</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handler</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">method</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;PUT&#34;</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">content</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">post</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">prisma</span>.<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">update</span>({
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">where</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> Number(<span style="color:#a6e22e">id</span>) },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">content</span> },
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">200</span>).<span style="color:#a6e22e">json</span>(<span style="color:#a6e22e">post</span>);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">405</span>).<span style="color:#a6e22e">json</span>({ <span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Method not allowed&#34;</span> });
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="d-delete-a-post">
+  <strong>d. Delete a Post</strong>
+  <a class="anchor" href="#d-delete-a-post">#</a>
+</h4>
+<p>Create a new file <code>app/api/posts/delete.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">PrismaClient</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;@prisma/client&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">prisma</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">PrismaClient</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handler</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">method</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;DELETE&#34;</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">id</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">prisma</span>.<span style="color:#a6e22e">post</span>.<span style="color:#66d9ef">delete</span>({
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">where</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> Number(<span style="color:#a6e22e">id</span>) },
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">200</span>).<span style="color:#a6e22e">json</span>({ <span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Post deleted&#34;</span> });
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">405</span>).<span style="color:#a6e22e">json</span>({ <span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Method not allowed&#34;</span> });
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You have now created RESTful API Endpoints for your database operations!</p>
+<hr>
+<h2 id="environment-variables">
+  Environment Variables
+  <a class="anchor" href="#environment-variables">#</a>
+</h2>
+<p>Store your database connection string securely in a <code>.env</code> file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-env" data-lang="env"><span style="display:flex;"><span>DATABASE_URL<span style="color:#f92672">=</span>your-database-connection-string
+</span></span></code></pre></div><p>Ensure <code>.env</code> is added to your <code>.gitignore</code> to prevent it from being committed.</p>
+<hr>
+<h2 id="performance-tips">
+  Performance Tips
+  <a class="anchor" href="#performance-tips">#</a>
+</h2>
+<ul>
+<li>Add indexes for frequently queried fields</li>
+<li>Use <code>select</code> to limit returned fields</li>
+<li>Consider caching for read-heavy operations</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#choosing-a-database">Choosing a Database</a>
+      <ul>
+        <li><a href="#sql-postgresql-via-supabase">SQL (PostgreSQL via Supabase)</a></li>
+        <li><a href="#nosql-mongodb-atlas">NoSQL (MongoDB Atlas)</a></li>
+      </ul>
+    </li>
+    <li><a href="#setup-guide-for-hosted-databases">Setup Guide for Hosted Databases</a>
+      <ul>
+        <li><a href="#postgresql-via-supabase">PostgreSQL via Supabase</a></li>
+        <li><a href="#mongodb-atlas">MongoDB Atlas</a></li>
+      </ul>
+    </li>
+    <li><a href="#adding-prisma-to-your-nextjs-project">Adding Prisma to Your Next.js Project</a></li>
+    <li><a href="#crud-operations-in-nextjs">CRUD Operations in Next.js</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#environment-variables">Environment Variables</a></li>
+    <li><a href="#performance-tips">Performance Tips</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
