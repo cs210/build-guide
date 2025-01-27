@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on CS 210 Build Guide</title><link>http://localhost:1313/docs/web/</link><description>Recent content in Web on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Frontend Essentials</title><link>http://localhost:1313/docs/web/frontendessentials/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/frontendessentials/</guid><description>&lt;h1 id="frontend-development-guide-for-nextjs">Frontend Development Guide for Next.js&lt;/h1>
+&lt;h2 id="component-architecture">Component Architecture&lt;/h2>
+&lt;h3 id="understanding-components">Understanding Components&lt;/h3>
+&lt;p>Components are the building blocks of your React application. They should be:&lt;/p>
+&lt;ul>
+&lt;li>Small and focused on a single responsibility&lt;/li>
+&lt;li>Reusable across different parts of your application&lt;/li>
+&lt;li>Easy to test and maintain&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s an example of a well-structured component:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-typescript" data-lang="typescript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// components/ui/Card.tsx
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Define the shape of props(parameters) that this component accepts
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">CardProps&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">title&lt;/span>: &lt;span style="color:#66d9ef">string&lt;/span> &lt;span style="color:#75715e">// Required: The card&amp;#39;s title
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">children&lt;/span>: &lt;span style="color:#66d9ef">React.ReactNode&lt;/span> &lt;span style="color:#75715e">// Required: The content inside the card
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">className?&lt;/span>: &lt;span style="color:#66d9ef">string&lt;/span> &lt;span style="color:#75715e">// Optional: Additional CSS classes
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Card component that renders a styled container with a title and content
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">export&lt;/span> &lt;span style="color:#66d9ef">function&lt;/span> &lt;span style="color:#a6e22e">Card&lt;/span>({ 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">title&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">children&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">className&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;&amp;#39;&lt;/span> &lt;span style="color:#75715e">// Default to empty string if no className provided
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">CardProps&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> (
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Main container with base styles and optional custom classes
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &amp;lt;&lt;span style="color:#f92672">div&lt;/span> &lt;span style="color:#a6e22e">className&lt;/span>&lt;span style="color:#f92672">=&lt;/span>{&lt;span style="color:#e6db74">`
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> rounded-lg /* Rounded corners */
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> shadow-md /* Subtle shadow for depth */
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> p-4 /* Padding on all sides */
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> &lt;/span>&lt;span style="color:#e6db74">${&lt;/span>&lt;span style="color:#a6e22e">className&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74"> /* Custom classes passed as prop */
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> `&lt;/span>}&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {&lt;span style="color:#75715e">/* Title section with consistent styling */&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">h2&lt;/span> &lt;span style="color:#a6e22e">className&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;text-xl font-bold mb-2&amp;#34;&lt;/span>&amp;gt;{&lt;span style="color:#a6e22e">title&lt;/span>}&amp;lt;/&lt;span style="color:#f92672">h2&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {&lt;span style="color:#75715e">/* Content section that renders the children */&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">div&lt;/span>&amp;gt;{&lt;span style="color:#a6e22e">children&lt;/span>}&amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> )
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This Card component demonstrates several best practices:&lt;/p></description></item><item><title>Start Here</title><link>http://localhost:1313/docs/web/starthere/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/starthere/</guid><description>&lt;h1 id="basic-website-setup">Basic Website Setup&lt;/h1>
+&lt;p>Below is a quick setup guide for building a website with Next.js and Vercel — the perfect infrastructure to add V0 code to!&lt;/p>
+&lt;hr>
+&lt;h2 id="project-setup">Project Setup&lt;/h2>
+&lt;p>First, check if you have Node installed. If not, download &lt;a href="https://nodejs.org/en">Node&lt;/a>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>node -v
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Next, create a new web project. The following command includes presets that integrate well with V0 code:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx create-next-app@latest project-name --typescript --eslint --tailwind --app --src-dir --import-alias &lt;span style="color:#e6db74">&amp;#34;@/*&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Say no to Turbopack.&lt;/p></description></item><item><title/><link>http://localhost:1313/docs/web/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/web/databases/</guid><description>&lt;h1 id="databases">Databases&lt;/h1>
+&lt;p>Most modern web applications often require a database to store and manage data. This guide will lead you through setting up a database for a Next.js project, using hosted database services, and performing basic CRUD (Create, Read, Update, Delete) operations with Prisma, a popular ORM (Object Relational Mapper).&lt;/p>
+&lt;hr>
+&lt;h2 id="choosing-a-database">Choosing a Database&lt;/h2>
+&lt;h3 id="sql-postgresql-via-supabase">SQL (PostgreSQL via Supabase)&lt;/h3>
+&lt;ul>
+&lt;li>Choose when you need: Data relationships, ACID compliance, complex queries&lt;/li>
+&lt;li>Free tier available, excellent documentation&lt;/li>
+&lt;li>Built-in row-level security and authentication&lt;/li>
+&lt;/ul>
+&lt;h3 id="nosql-mongodb-atlas">NoSQL (MongoDB Atlas)&lt;/h3>
+&lt;ul>
+&lt;li>Choose when you need: Flexible schema, high write throughput, horizontal scaling&lt;/li>
+&lt;li>Free tier available, great for prototypes&lt;/li>
+&lt;li>Native JSON support&lt;/li>
+&lt;/ul>
+&lt;h2 id="setup-guide-for-hosted-databases">Setup Guide for Hosted Databases&lt;/h2>
+&lt;h3 id="postgresql-via-supabase">PostgreSQL via Supabase&lt;/h3>
+&lt;ol>
+&lt;li>Sign up &lt;a href="https://supabase.com">here&lt;/a>&lt;/li>
+&lt;li>Create project&lt;/li>
+&lt;li>Get connection string from: Settings -&amp;gt; Database&lt;/li>
+&lt;/ol>
+&lt;h3 id="mongodb-atlas">MongoDB Atlas&lt;/h3>
+&lt;ol>
+&lt;li>Sign up &lt;a href="https://mongodb.com/atlas">here&lt;/a>&lt;/li>
+&lt;li>Create cluster (M0 Free tier)&lt;/li>
+&lt;li>Get connection string from: Connect -&amp;gt; Connect your application&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="adding-prisma-to-your-nextjs-project">Adding Prisma to Your Next.js Project&lt;/h2>
+&lt;p>Prisma makes working with databases in Next.js efficient and type-safe. Follow these steps:&lt;/p></description></item></channel></rss>
