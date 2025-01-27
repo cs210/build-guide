@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:1313/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Extending LLMs</title><link>http://localhost:1313/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:1313/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
+ Basic ML
+ &lt;a class="anchor" href="#basic-ml">#&lt;/a>
+&lt;/h1>
+&lt;p>Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p>
+&lt;h2 id="large-language-models-llms">
+ Large Language Models (LLMs)
+ &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
+&lt;/h2>
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Extending LLMs</title><link>http://localhost:1313/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
  Extending LLMs
  &lt;a class="anchor" href="#extending-llms">#&lt;/a>
 &lt;/h1>
@@ -16,13 +25,4 @@
  Buy first, not Build.
  &lt;a class="anchor" href="#buy-first-not-build">#&lt;/a>
 &lt;/h2>
-&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
- Basic ML
- &lt;a class="anchor" href="#basic-ml">#&lt;/a>
-&lt;/h1>
-&lt;p>Below are some snippets for common ML use cases such as NLP &amp;ndash; namely, LLMs &amp;ndash; computer vision, and even standard statistical ML.&lt;/p>
-&lt;h2 id="large-language-models-llms">
- Large Language Models (LLMs)
- &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
-&lt;/h2>
-&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item></channel></rss>
+&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item></channel></rss>
