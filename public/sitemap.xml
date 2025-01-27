@@ -2,49 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cs210.github.io/</loc>
-    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
-  </url><url>
-    <loc>https://cs210.github.io/docs/</loc>
-    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
-  </url><url>
-    <loc>https://cs210.github.io/docs/web/frontendessentials/</loc>
-    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
-  </url><url>
-    <loc>https://cs210.github.io/docs/mobile/</loc>
-    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
-  </url><url>
     <loc>https://cs210.github.io/docs/mobile/mobilebasics/</loc>
     <lastmod>2025-01-25T10:55:07-08:00</lastmod>
   </url><url>
     <loc>https://cs210.github.io/docs/web/starthere/</loc>
     <lastmod>2025-01-25T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://cs210.github.io/docs/web/</loc>
-    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
-  </url><url>
-    <loc>https://cs210.github.io/docs/vr/</loc>
-    <lastmod>2025-01-08T10:55:07-08:00</lastmod>
-  </url><url>
-    <loc>https://cs210.github.io/docs/ml/basic/</loc>
-    <lastmod>2025-01-08T10:55:07-08:00</lastmod>
-  </url><url>
     <loc>https://cs210.github.io/docs/class-resources/</loc>
-    <lastmod>2025-01-08T10:55:07-08:00</lastmod>
-  </url><url>
-    <loc>https://cs210.github.io/docs/ml/extending-llms/</loc>
-    <lastmod>2025-01-08T10:55:07-08:00</lastmod>
-  </url><url>
-    <loc>https://cs210.github.io/docs/ml/general-advice/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
     <loc>https://cs210.github.io/docs/vr/getting-started-in-vr/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
-    <loc>https://cs210.github.io/docs/ml/</loc>
+    <loc>https://cs210.github.io/docs/web/frontendessentials/</loc>
+    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
+  </url><url>
+    <loc>https://cs210.github.io/docs/web/</loc>
+    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
+  </url><url>
+    <loc>https://cs210.github.io/docs/ml/extending-llms/</loc>
     <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
     <loc>https://cs210.github.io/docs/web/databases/</loc>
+    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
+  </url><url>
+    <loc>https://cs210.github.io/docs/ml/general-advice/</loc>
+    <lastmod>2025-01-08T10:55:07-08:00</lastmod>
+  </url><url>
+    <loc>https://cs210.github.io/docs/ml/</loc>
+    <lastmod>2025-01-08T10:55:07-08:00</lastmod>
+  </url><url>
+    <loc>https://cs210.github.io/docs/vr/</loc>
+    <lastmod>2025-01-08T10:55:07-08:00</lastmod>
+  </url><url>
+    <loc>https://cs210.github.io/docs/mobile/</loc>
+    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
+  </url><url>
+    <loc>https://cs210.github.io/</loc>
+    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
+  </url><url>
+    <loc>https://cs210.github.io/docs/</loc>
+    <lastmod>2025-01-25T10:55:07-08:00</lastmod>
+  </url><url>
+    <loc>https://cs210.github.io/docs/ml/basic/</loc>
+    <lastmod>2025-01-08T10:55:07-08:00</lastmod>
   </url><url>
     <loc>https://cs210.github.io/categories/</loc>
   </url><url>

@@ -1,3 +1,10 @@
++++
+date = '2025-01-25T10:55:07-08:00'
+draft = false
+title = 'Databases'
+weight = 3
++++
+
 # Databases
 
 Most modern web applications often require a database to store and manage data. This guide will lead you through setting up a database for a Next.js project, using hosted database services, and performing basic CRUD (Create, Read, Update, Delete) operations with Prisma, a popular ORM (Object Relational Mapper).

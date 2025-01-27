@@ -2,6 +2,7 @@
 date = '2025-01-25T10:55:07-08:00'
 draft = false
 title = 'Mobile Basics'
+weight = 1
 +++
 # Mobile Basics 
 

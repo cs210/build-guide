@@ -2,6 +2,7 @@
 date = '2025-01-25T10:55:07-08:00'
 draft = false
 title = 'Start Here'
+weight = 1
 +++
 # Basic Website Setup  
 Below is a quick setup guide for building a website with Next.js and Vercel — the perfect infrastructure to add V0 code to!  

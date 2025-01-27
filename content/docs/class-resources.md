@@ -2,6 +2,7 @@
 date = '2025-01-08T10:55:07-08:00'
 draft = false
 title = 'Class Resources'
+weight = 1
 +++
 
 # Class Resources
