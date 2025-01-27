@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:1313/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML Engineering on CS 210 Build Guide</title><link>http://localhost:1313/docs/ml/</link><description>Recent content in ML Engineering on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:1313/docs/ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic ML</title><link>http://localhost:1313/docs/ml/basic-ml/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/basic-ml/</guid><description>&lt;h1 id="basic-ml">
  Basic ML
  &lt;a class="anchor" href="#basic-ml">#&lt;/a>
 &lt;/h1>
@@ -21,13 +21,17 @@
  &lt;a class="anchor" href="#a-potpourri-of-resources">#&lt;/a>
 &lt;/h1>
 &lt;p>Below is a set of resources, ranging from popular AI/ML tooling to general advice.&lt;/p>
+&lt;h2 id="llm-frameworks">
+ LLM Frameworks
+ &lt;a class="anchor" href="#llm-frameworks">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.langchain.com/">Langchain&lt;/a> is probably the most popular LLM framework. Using Langchain, you can spin up RAG pipelines, parse through PDFs and other unstructured data, and much more.&lt;/li>
+&lt;li>&lt;a href="https://sdk.vercel.ai/docs/introduction">Vercel&amp;rsquo;s AI SDK&lt;/a> is another SDK that can help developers build AI-powered applications. In particular, the library can help with integrating text generation, tool calling, and agentic workflows directly in your frontend code.&lt;/li>
+&lt;li>&lt;a href="https://www.llamaindex.ai/">LlamaIndex&lt;/a> is another popular LLM framework that helps to enable use cases ranged from question-answering, chatbots, and even agents.&lt;/li>
+&lt;/ul>
 &lt;h2 id="general-advice">
  General Advice
  &lt;a class="anchor" href="#general-advice">#&lt;/a>
 &lt;/h2>
-&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p>
-&lt;h3 id="buy-first-then-build">
- Buy first, then Build
- &lt;a class="anchor" href="#buy-first-then-build">#&lt;/a>
-&lt;/h3>
-&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item></channel></rss>
+&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p></description></item></channel></rss>
