@@ -12,7 +12,7 @@
  Developing and Running Apps
  &lt;a class="anchor" href="#developing-and-running-apps">#&lt;/a>
 &lt;/h2>
-&lt;p>We suggest that you use &lt;a href="https://expo.dev/">expo&lt;/a> to test your app throughout your development process. It&amp;rsquo;s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine.&lt;/p></description></item><item><title>Start Here</title><link>http://localhost:1313/docs/web/starthere/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/starthere/</guid><description>&lt;h1 id="basic-website-setup">
+&lt;p>We suggest that you use &lt;a href="https://expo.dev/">expo&lt;/a> to test your app throughout your development process. It&amp;rsquo;s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine.&lt;/p></description></item><item><title>Start Here</title><link>http://localhost:1313/docs/web/start-here/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/start-here/</guid><description>&lt;h1 id="basic-website-setup">
  Basic Website Setup
  &lt;a class="anchor" href="#basic-website-setup">#&lt;/a>
 &lt;/h1>
@@ -203,7 +203,7 @@
 &lt;li>&lt;a href="https://unrealvr.wordpress.com/">https://unrealvr.wordpress.com/&lt;/a>&lt;/li>
 &lt;li>I&amp;rsquo;ve also done stuff on the Cardboard and some product research on the space in general. Feel free to ask me any questions!&lt;/li>
 &lt;/ul>
-&lt;p>There is a LOT of information to just absorb if you&amp;rsquo;re completely new to the space.&lt;/p></description></item><item><title>Frontend Essentials</title><link>http://localhost:1313/docs/web/frontendessentials/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/frontendessentials/</guid><description>&lt;h1 id="frontend-development-guide-for-nextjs">
+&lt;p>There is a LOT of information to just absorb if you&amp;rsquo;re completely new to the space.&lt;/p></description></item><item><title>Frontend Essentials</title><link>http://localhost:1313/docs/web/frontend-essentials/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/frontend-essentials/</guid><description>&lt;h1 id="frontend-development-guide-for-nextjs">
  Frontend Development Guide for Next.js
  &lt;a class="anchor" href="#frontend-development-guide-for-nextjs">#&lt;/a>
 &lt;/h1>
@@ -253,16 +253,16 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> )
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This Card component demonstrates several best practices:&lt;/p></description></item><item><title>Extending LLMs</title><link>http://localhost:1313/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
- Extending LLMs
- &lt;a class="anchor" href="#extending-llms">#&lt;/a>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This Card component demonstrates several best practices:&lt;/p></description></item><item><title>Using LLMs</title><link>http://localhost:1313/docs/ml/using-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/using-llms/</guid><description>&lt;h1 id="using-llms">
+ Using LLMs
+ &lt;a class="anchor" href="#using-llms">#&lt;/a>
 &lt;/h1>
 &lt;p>Below are some ways to go beyond just LLMs and use your custom data. These include methods such as Retrieval Augmented Generation (RAG), finetuning, and even searching over tabular data.&lt;/p>
-&lt;h2 id="retrieval-augmented-generation">
- Retrieval Augmented Generation
- &lt;a class="anchor" href="#retrieval-augmented-generation">#&lt;/a>
+&lt;h2 id="prompt-engineering">
+ Prompt Engineering
+ &lt;a class="anchor" href="#prompt-engineering">#&lt;/a>
 &lt;/h2>
-&lt;p>Language models are typically pretrained on vast amounts of data, but they may require updated information or data tailored to a specific use case. Retraining a language model on a large amount of data might prove to be expensive. In many scenarios, extending large language models with external knowledge bases becomes essential to provide relevant and accurate outputs. This is where &lt;strong>Retrieval-Augmented Generation (RAG)&lt;/strong> comes into play. RAG consists of two key components: a retrieval system to identify relevant items or contextual information and a mechanism to integrate that information into the model&amp;rsquo;s output, often through prompting.&lt;/p></description></item><item><title>Databases</title><link>http://localhost:1313/docs/web/databases/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/databases/</guid><description>&lt;h1 id="databases">
+&lt;p>LLMs are trained on a ton of text, so we can often get a lot out of them just by clever prompting. Finding the best way to prompt a model is also known as &lt;a href="https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/">&lt;strong>prompt engineering&lt;/strong>&lt;/a>, and there are several popular methods, including chain-of-thought (including the model&amp;rsquo;s reasoning step-by-step) as well as few-shot prompting (providing a few sample examples).&lt;/p></description></item><item><title>Databases</title><link>http://localhost:1313/docs/web/databases/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/databases/</guid><description>&lt;h1 id="databases">
  Databases
  &lt;a class="anchor" href="#databases">#&lt;/a>
 &lt;/h1>
@@ -317,13 +317,18 @@
  Adding Prisma to Your Next.js Project
  &lt;a class="anchor" href="#adding-prisma-to-your-nextjs-project">#&lt;/a>
 &lt;/h2>
-&lt;p>Prisma makes working with databases in Next.js efficient and type-safe. Follow these steps:&lt;/p></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
+&lt;p>Prisma makes working with databases in Next.js efficient and type-safe. Follow these steps:&lt;/p></description></item><item><title>A Potpourri of Resources</title><link>http://localhost:1313/docs/ml/potpourri-resources/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/potpourri-resources/</guid><description>&lt;h1 id="a-potpourri-of-resources">
+ A Potpourri of Resources
+ &lt;a class="anchor" href="#a-potpourri-of-resources">#&lt;/a>
+&lt;/h1>
+&lt;p>Below is a set of resources, ranging from popular AI/ML tooling to general advice.&lt;/p>
+&lt;h2 id="general-advice">
  General Advice
  &lt;a class="anchor" href="#general-advice">#&lt;/a>
-&lt;/h1>
-&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p>
-&lt;h2 id="buy-first-not-build">
- Buy first, not Build.
- &lt;a class="anchor" href="#buy-first-not-build">#&lt;/a>
 &lt;/h2>
+&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p>
+&lt;h3 id="buy-first-then-build">
+ Buy first, then Build
+ &lt;a class="anchor" href="#buy-first-then-build">#&lt;/a>
+&lt;/h3>
 &lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item></channel></rss>

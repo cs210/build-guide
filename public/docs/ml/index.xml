@@ -7,22 +7,27 @@
  Large Language Models (LLMs)
  &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
 &lt;/h2>
-&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Extending LLMs</title><link>http://localhost:1313/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
- Extending LLMs
- &lt;a class="anchor" href="#extending-llms">#&lt;/a>
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Using LLMs</title><link>http://localhost:1313/docs/ml/using-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/using-llms/</guid><description>&lt;h1 id="using-llms">
+ Using LLMs
+ &lt;a class="anchor" href="#using-llms">#&lt;/a>
 &lt;/h1>
 &lt;p>Below are some ways to go beyond just LLMs and use your custom data. These include methods such as Retrieval Augmented Generation (RAG), finetuning, and even searching over tabular data.&lt;/p>
-&lt;h2 id="retrieval-augmented-generation">
- Retrieval Augmented Generation
- &lt;a class="anchor" href="#retrieval-augmented-generation">#&lt;/a>
+&lt;h2 id="prompt-engineering">
+ Prompt Engineering
+ &lt;a class="anchor" href="#prompt-engineering">#&lt;/a>
 &lt;/h2>
-&lt;p>Language models are typically pretrained on vast amounts of data, but they may require updated information or data tailored to a specific use case. Retraining a language model on a large amount of data might prove to be expensive. In many scenarios, extending large language models with external knowledge bases becomes essential to provide relevant and accurate outputs. This is where &lt;strong>Retrieval-Augmented Generation (RAG)&lt;/strong> comes into play. RAG consists of two key components: a retrieval system to identify relevant items or contextual information and a mechanism to integrate that information into the model&amp;rsquo;s output, often through prompting.&lt;/p></description></item><item><title>General Advice</title><link>http://localhost:1313/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
+&lt;p>LLMs are trained on a ton of text, so we can often get a lot out of them just by clever prompting. Finding the best way to prompt a model is also known as &lt;a href="https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/">&lt;strong>prompt engineering&lt;/strong>&lt;/a>, and there are several popular methods, including chain-of-thought (including the model&amp;rsquo;s reasoning step-by-step) as well as few-shot prompting (providing a few sample examples).&lt;/p></description></item><item><title>A Potpourri of Resources</title><link>http://localhost:1313/docs/ml/potpourri-resources/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/ml/potpourri-resources/</guid><description>&lt;h1 id="a-potpourri-of-resources">
+ A Potpourri of Resources
+ &lt;a class="anchor" href="#a-potpourri-of-resources">#&lt;/a>
+&lt;/h1>
+&lt;p>Below is a set of resources, ranging from popular AI/ML tooling to general advice.&lt;/p>
+&lt;h2 id="general-advice">
  General Advice
  &lt;a class="anchor" href="#general-advice">#&lt;/a>
-&lt;/h1>
-&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p>
-&lt;h2 id="buy-first-not-build">
- Buy first, not Build.
- &lt;a class="anchor" href="#buy-first-not-build">#&lt;/a>
 &lt;/h2>
+&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p>
+&lt;h3 id="buy-first-then-build">
+ Buy first, then Build
+ &lt;a class="anchor" href="#buy-first-then-build">#&lt;/a>
+&lt;/h3>
 &lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item></channel></rss>

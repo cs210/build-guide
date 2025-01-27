@@ -1,12 +1,15 @@
 +++
 date = '2025-01-08T10:55:07-08:00'
 draft = false
-title = 'Extending LLMs'
+title = 'Using LLMs'
 weight = 2
 +++
 
-# Extending LLMs
+# Using LLMs
 Below are some ways to go beyond just LLMs and use your custom data. These include methods such as Retrieval Augmented Generation (RAG), finetuning, and even searching over tabular data.
+
+## Prompt Engineering
+LLMs are trained on a ton of text, so we can often get a lot out of them just by clever prompting. Finding the best way to prompt a model is also known as [**prompt engineering**](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/), and there are several popular methods, including chain-of-thought (including the model's reasoning step-by-step) as well as few-shot prompting (providing a few sample examples).
 
 ## Retrieval Augmented Generation
 Language models are typically pretrained on vast amounts of data, but they may require updated information or data tailored to a specific use case. Retraining a language model on a large amount of data might prove to be expensive. In many scenarios, extending large language models with external knowledge bases becomes essential to provide relevant and accurate outputs. This is where **Retrieval-Augmented Generation (RAG)** comes into play. RAG consists of two key components: a retrieval system to identify relevant items or contextual information and a mechanism to integrate that information into the model's output, often through prompting.
@@ -70,10 +73,10 @@ for i, doc in enumerate(results["documents"][0]):
     print(f"{i + 1}. {doc}")
 ```
 
-Using these documents, we can then use them when prompting a final language model to improve overall responses. Finding the best way to prompt a model is also known as [prompt engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/), and there are several popular methods, including chain-of-thought (including the model's reasoning step-by-step) as well as few-shot prompting (providing a few sample examples).
+Using these documents, we can then use them when prompting a final language model to improve overall responses.
 
 ## Finetuning Language Models
-Sometimes, prompting isn't enough. You may want to adjust and steer the tone of a large language model (LLM) or train it on additional examples that exceed the limits of a single prompt. To achieve this, fine-tuning is a powerful tool.
+Sometimes, prompting isn't enough. You may want to adjust and steer the tone of a large language model (LLM) or train it on additional examples that exceed the limits of a single prompt. To achieve this, **fine-tuning** is a powerful tool.
 
 Fine-tuning is the process of adapting a pre-trained model for specific tasks or use cases. It is significantly easier and more cost-effective to improve a base model through fine-tuning than to train a model from scratch.
 
@@ -122,4 +125,96 @@ print(completion.choices[0].message)
 
 You can experiment with different hyperparameters to improve the performance of your fine-tuned model. Fine-tuning an open-source model is also a viable option. There are excellent resources available, such as the [Llama Fine-Tuning Guide](https://www.llama.com/docs/how-to-guides/fine-tuning/). Additionally, there are many techniques ([IBM Fine-Tuning Techniques](https://www.ibm.com/think/topics/fine-tuning)) to make the process more cost-effective and computationally efficient.
 
-## Tool Use
+## Function Calling/Tool Use
+We showed above how we might incorporate external data in our LLM pipelines. However, we may also need for our model to interact with other services, such as APIs and UIs. In this case, we'll lean on **function calling, or tool use**.
+
+The below diagram gives a good overview of how to set up function calling, with many of the popular pre-trained LLMs already having [infrastructure](https://platform.openai.com/docs/guides/function-calling) to enable this. In general, you will need to: define the tools to the LLM, determine when to call the tool, and use the results downstream.
+
+![Function Calling Pipeline](https://cdn.openai.com/API/docs/images/function-calling-diagram-steps.png)
+
+As a quick example, let's first implement a function that gets the current weather using an API call:
+
+```python
+import requests
+
+def get_weather(latitude, longitude):
+    response = requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m")
+    data = response.json()
+    return data['current']['temperature_2m']
+```
+
+Using the `openai` SDK, we can then define this tool for our language model to use:
+
+```python
+from openai import OpenAI
+import json
+
+client = OpenAI()
+
+tools = [{
+    "type": "function",
+    "function": {
+        "name": "get_weather",
+        "description": "Get current temperature for provided coordinates in celsius.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "latitude": {"type": "number"},
+                "longitude": {"type": "number"}
+            },
+            "required": ["latitude", "longitude"],
+            "additionalProperties": False
+        },
+        "strict": True
+    }
+}]
+
+messages = [{"role": "user", "content": "What's the weather like in Paris today?"}]
+
+completion = client.chat.completions.create(
+    model="gpt-4o",
+    messages=messages,
+    tools=tools,
+)
+```
+
+If the model decides to use the tool, it'll respond to the message with a request to get the weather:
+
+```python
+[{
+    "id": "call_12345xyz",
+    "type": "function",
+    "function": {
+      "name": "get_weather",
+      "arguments": "{\"latitude\":48.8566,\"longitude\":2.3522}"
+    }
+}]
+```
+
+We can then execute the function code:
+
+```python
+tool_call = completion.choices[0].message.tool_calls[0]
+args = json.loads(tool_call.function.arguments)
+
+result = get_weather(args["latitude"], args["longitude"])
+```
+
+And then supply the result to the model and call it again.
+
+```python
+messages.append(completion.choices[0].message)  # append model's function call message
+messages.append({                               # append result message
+    "role": "tool",
+    "tool_call_id": tool_call.id,
+    "content": result
+})
+
+completion_2 = client.chat.completions.create(
+    model="gpt-4o",
+    messages=messages,
+    tools=tools,
+)
+```
+
+Overall, function calling is how we enable the development of [truly agentic workflows](https://huyenchip.com/2025/01/07/agents.html).
