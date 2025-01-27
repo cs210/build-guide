@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mobile on CS 210 Build Guide</title>
+    <link>https://cs210.github.io/docs/mobile/</link>
+    <description>Recent content in Mobile on CS 210 Build Guide</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate>
+    <atom:link href="https://cs210.github.io/docs/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mobile Basics</title>
+      <link>https://cs210.github.io/docs/mobile/mobilebasics/</link>
+      <pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate>
+      <guid>https://cs210.github.io/docs/mobile/mobilebasics/</guid>
+      <description>&lt;h1 id=&#34;mobile-basics&#34;&gt;&#xA;  Mobile Basics&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mobile-basics&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;language-choice&#34;&gt;&#xA;  Language choice&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#language-choice&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;For building a mobile app we would suggest using React Native. It renders native mobile componenets and almost all code can be shared between IOS and Android.&lt;/p&gt;&#xA;&lt;p&gt;If you want higher performance on a specific type of device it might be worth considering the use of a Swift(IOS) or Kotlin(Android).&lt;/p&gt;&#xA;&lt;h2 id=&#34;developing-and-running-apps&#34;&gt;&#xA;  Developing and Running Apps&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#developing-and-running-apps&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;We suggest that you use &lt;a href=&#34;https://expo.dev/&#34;&gt;expo&lt;/a&gt; to test your app throughout your development process. It&amp;rsquo;s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
