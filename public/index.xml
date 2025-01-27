@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CS 210 Build Guide</title><link>http://localhost:54415/</link><description>Recent content on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:54415/index.xml" rel="self" type="application/rss+xml"/><item><title>Frontend Essentials</title><link>http://localhost:54415/docs/web/frontendessentials/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/web/frontendessentials/</guid><description>&lt;h1 id="frontend-development-guide-for-nextjs">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CS 210 Build Guide</title><link>http://localhost:49992/</link><description>Recent content on CS 210 Build Guide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2025 10:55:07 -0800</lastBuildDate><atom:link href="http://localhost:49992/index.xml" rel="self" type="application/rss+xml"/><item><title>Frontend Essentials</title><link>http://localhost:49992/docs/web/frontendessentials/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/web/frontendessentials/</guid><description>&lt;h1 id="frontend-development-guide-for-nextjs">
  Frontend Development Guide for Next.js
  &lt;a class="anchor" href="#frontend-development-guide-for-nextjs">#&lt;/a>
 &lt;/h1>
@@ -48,7 +48,21 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> )
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This Card component demonstrates several best practices:&lt;/p></description></item><item><title>Start Here</title><link>http://localhost:54415/docs/web/starthere/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/web/starthere/</guid><description>&lt;h1 id="basic-website-setup">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This Card component demonstrates several best practices:&lt;/p></description></item><item><title>Mobile Basics</title><link>http://localhost:49992/docs/mobile/mobilebasics/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/mobile/mobilebasics/</guid><description>&lt;h1 id="mobile-basics">
+ Mobile Basics
+ &lt;a class="anchor" href="#mobile-basics">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="language-choice">
+ Language choice
+ &lt;a class="anchor" href="#language-choice">#&lt;/a>
+&lt;/h2>
+&lt;p>For building a mobile app we would suggest using React Native. It renders native mobile componenets and almost all code can be shared between IOS and Android.&lt;/p>
+&lt;p>If you want higher performance on a specific type of device it might be worth considering the use of a Swift(IOS) or Kotlin(Android).&lt;/p>
+&lt;h2 id="developing-and-running-apps">
+ Developing and Running Apps
+ &lt;a class="anchor" href="#developing-and-running-apps">#&lt;/a>
+&lt;/h2>
+&lt;p>We suggest that you use &lt;a href="https://expo.dev/">expo&lt;/a> to test your app throughout your development process. It&amp;rsquo;s accessible and has everything your team will need most of the time. You can also write for both iOS and Android regardless of your development machine.&lt;/p></description></item><item><title>Start Here</title><link>http://localhost:49992/docs/web/starthere/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/web/starthere/</guid><description>&lt;h1 id="basic-website-setup">
  Basic Website Setup
  &lt;a class="anchor" href="#basic-website-setup">#&lt;/a>
 &lt;/h1>
@@ -62,7 +76,7 @@
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>node -v
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Next, create a new web project. The following command includes presets that integrate well with V0 code:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npx create-next-app@latest project-name --typescript --eslint --tailwind --app --src-dir --import-alias &lt;span style="color:#e6db74">&amp;#34;@/*&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Say no to Turbopack.&lt;/p></description></item><item><title>Basic ML</title><link>http://localhost:54415/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Say no to Turbopack.&lt;/p></description></item><item><title>Basic ML</title><link>http://localhost:49992/docs/ml/basic/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/ml/basic/</guid><description>&lt;h1 id="basic-ml">
  Basic ML
  &lt;a class="anchor" href="#basic-ml">#&lt;/a>
 &lt;/h1>
@@ -71,7 +85,7 @@
  Large Language Models (LLMs)
  &lt;a class="anchor" href="#large-language-models-llms">#&lt;/a>
 &lt;/h2>
-&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Class Resources</title><link>http://localhost:54415/docs/class-resources/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/class-resources/</guid><description>&lt;h1 id="class-resources">
+&lt;p>For initial iteration, using LLM APIs is probably the best way to go. There are several models out there, each with their own strengths. Below is an example using the &lt;a href="https://platform.openai.com/docs/quickstart?language-preference=python">OpenAI API&lt;/a> to make a call to a language model:&lt;/p></description></item><item><title>Class Resources</title><link>http://localhost:49992/docs/class-resources/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/class-resources/</guid><description>&lt;h1 id="class-resources">
  Class Resources
  &lt;a class="anchor" href="#class-resources">#&lt;/a>
 &lt;/h1>
@@ -155,7 +169,7 @@
 &lt;li>&lt;a href="https://github.com/cs210/Home/blob/master/Grading%20Rubric%20%20%282%29.pdf">Grading Rubric&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://giphy.com/apps/giphycapture">Make an animated gif from screen shots&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://scrumblr.ca/">Digital sticky note option&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Extending LLMs</title><link>http://localhost:54415/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
+&lt;/ul></description></item><item><title>Extending LLMs</title><link>http://localhost:49992/docs/ml/extending-llms/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/ml/extending-llms/</guid><description>&lt;h1 id="extending-llms">
  Extending LLMs
  &lt;a class="anchor" href="#extending-llms">#&lt;/a>
 &lt;/h1>
@@ -171,7 +185,7 @@
 &lt;h2 id="tabular-data">
  Tabular Data
  &lt;a class="anchor" href="#tabular-data">#&lt;/a>
-&lt;/h2></description></item><item><title>General Advice</title><link>http://localhost:54415/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
+&lt;/h2></description></item><item><title>General Advice</title><link>http://localhost:49992/docs/ml/general-advice/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/ml/general-advice/</guid><description>&lt;h1 id="general-advice">
  General Advice
  &lt;a class="anchor" href="#general-advice">#&lt;/a>
 &lt;/h1>
@@ -180,7 +194,7 @@
  Buy first, not Build.
  &lt;a class="anchor" href="#buy-first-not-build">#&lt;/a>
 &lt;/h2>
-&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item><item><title>Getting Started in VR</title><link>http://localhost:54415/docs/vr/getting-started-in-vr/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:54415/docs/vr/getting-started-in-vr/</guid><description>&lt;h1 id="getting-started-in-vr">
+&lt;p>For initial functional prototyping and for most of the former part of your application&amp;rsquo;s lifecycle, lean on existing APIs to do a lot of the heavy lifting. These models are already quite powerful and are able to handle almost all of the requests you send it. If certain users or design partners necessitate even more advanced functionality, though, consider working and finetuning your own LLMs.&lt;/p></description></item><item><title>Getting Started in VR</title><link>http://localhost:49992/docs/vr/getting-started-in-vr/</link><pubDate>Wed, 08 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:49992/docs/vr/getting-started-in-vr/</guid><description>&lt;h1 id="getting-started-in-vr">
  Getting Started in VR
  &lt;a class="anchor" href="#getting-started-in-vr">#&lt;/a>
 &lt;/h1>
@@ -264,7 +278,7 @@
 &lt;li>&lt;a href="https://unrealvr.wordpress.com/">https://unrealvr.wordpress.com/&lt;/a>&lt;/li>
 &lt;li>I&amp;rsquo;ve also done stuff on the Cardboard and some product research on the space in general. Feel free to ask me any questions!&lt;/li>
 &lt;/ul>
-&lt;p>There is a LOT of information to just absorb if you&amp;rsquo;re completely new to the space.&lt;/p></description></item><item><title/><link>http://localhost:54415/docs/web/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:54415/docs/web/databases/</guid><description>&lt;h1 id="databases">
+&lt;p>There is a LOT of information to just absorb if you&amp;rsquo;re completely new to the space.&lt;/p></description></item><item><title/><link>http://localhost:49992/docs/web/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:49992/docs/web/databases/</guid><description>&lt;h1 id="databases">
  Databases
  &lt;a class="anchor" href="#databases">#&lt;/a>
 &lt;/h1>
