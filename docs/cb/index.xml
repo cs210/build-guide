@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Company Building on CS 210 Build Guide</title>
+    <link>https://cs210.github.io/docs/cb/</link>
+    <description>Recent content in Company Building on CS 210 Build Guide</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Feb 2025 10:55:07 -0800</lastBuildDate>
+    <atom:link href="https://cs210.github.io/docs/cb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Talking to Users</title>
+      <link>https://cs210.github.io/docs/cb/talking-to-users/</link>
+      <pubDate>Thu, 06 Feb 2025 10:55:07 -0800</pubDate>
+      <guid>https://cs210.github.io/docs/cb/talking-to-users/</guid>
+      <description>&lt;h1 id=&#34;on-talking-to-users&#34;&gt;On Talking to Users&lt;/h1&gt;&#xA;&lt;p&gt;During our VC meetings this past week, &lt;a href=&#34;https://www.linkedin.com/in/johnlilly/&#34;&gt;John Lilly&lt;/a&gt; brought up a generalized observation: a lot of folks seem to be guessing about what customers might want. This points to something broader: the important balance in 210 between rapidly prototyping and building something end users want.&lt;/p&gt;&#xA;&lt;p&gt;As CS people, we all love going heads down and building as opposed to talking to people. Especially with the rise of AI tools, it&amp;rsquo;s easy to get lost in prototyping forever without talking to a soul. After all, it should be all about opinion-based design, right?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
