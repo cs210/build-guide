@@ -340,4 +340,13 @@
  General Advice
  &lt;a class="anchor" href="#general-advice">#&lt;/a>
 &lt;/h2>
-&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p></description></item></channel></rss>
+&lt;p>Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p></description></item><item><title>Analytics</title><link>http://localhost:1313/docs/web/analytics/</link><pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate><guid>http://localhost:1313/docs/web/analytics/</guid><description>&lt;h1 id="analytics">
+ Analytics
+ &lt;a class="anchor" href="#analytics">#&lt;/a>
+&lt;/h1>
+&lt;p>There’s a chance that the OKRs and KPIs your team is managing can be collected/measured programmatically. Collecting information can be important, especially as you continue to achieve virality.&lt;/p>
+&lt;h2 id="vercel-analytics">
+ Vercel Analytics
+ &lt;a class="anchor" href="#vercel-analytics">#&lt;/a>
+&lt;/h2>
+&lt;p>Vercel already has a ton of analytics built into their platform, which you can check out &lt;a href="https://vercel.com/docs/analytics">here&lt;/a>. Even with the plan our class has, you can track metrics such as the total number of visitors and views; &lt;a href="https://vercel.com/docs/speed-insights">speed and latency&lt;/a>; and even build logs.&lt;/p></description></item></channel></rss>
