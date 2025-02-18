@@ -78,5 +78,12 @@
       <guid>https://cs210.github.io/docs/ml/potpourri-resources/</guid>
       <description>&lt;h1 id=&#34;a-potpourri-of-resources&#34;&gt;A Potpourri of Resources&lt;/h1&gt;&#xA;&lt;p&gt;Below is a set of resources, ranging from popular AI/ML tooling to general advice.&lt;/p&gt;&#xA;&lt;h2 id=&#34;llm-frameworks&#34;&gt;LLM Frameworks&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.langchain.com/&#34;&gt;Langchain&lt;/a&gt; is probably the most popular LLM framework. Using Langchain, you can spin up RAG pipelines, parse through PDFs and other unstructured data, and much more.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sdk.vercel.ai/docs/introduction&#34;&gt;Vercel&amp;rsquo;s AI SDK&lt;/a&gt; is another SDK that can help developers build AI-powered applications. In particular, the library can help with integrating text generation, tool calling, and agentic workflows directly in your frontend code.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.llamaindex.ai/&#34;&gt;LlamaIndex&lt;/a&gt; is another popular LLM framework that helps to enable use cases ranged from question-answering, chatbots, and even agents.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;general-advice&#34;&gt;General Advice&lt;/h2&gt;&#xA;&lt;p&gt;Below are some general tips, aggregated from industry experts and 210 alums.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Analytics</title>
+      <link>https://cs210.github.io/docs/web/analytics/</link>
+      <pubDate>Sat, 25 Jan 2025 10:55:07 -0800</pubDate>
+      <guid>https://cs210.github.io/docs/web/analytics/</guid>
+      <description>&lt;h1 id=&#34;analytics&#34;&gt;Analytics&lt;/h1&gt;&#xA;&lt;p&gt;There’s a chance that the OKRs and KPIs your team is managing can be collected/measured programmatically. Collecting information can be important, especially as you continue to achieve virality.&lt;/p&gt;&#xA;&lt;h2 id=&#34;vercel-analytics&#34;&gt;Vercel Analytics&lt;/h2&gt;&#xA;&lt;p&gt;Vercel already has a ton of analytics built into their platform, which you can check out &lt;a href=&#34;https://vercel.com/docs/analytics&#34;&gt;here&lt;/a&gt;. Even with the plan our class has, you can track metrics such as the total number of visitors and views; &lt;a href=&#34;https://vercel.com/docs/speed-insights&#34;&gt;speed and latency&lt;/a&gt;; and even build logs.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
